@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         115 清理工具 (cex)
 // @namespace    com.songxff.115-cleaner
-// @version      0.1.0
+// @version      0.1.1
 // @author       songxff (based on 115不大助手 by 生瓜太保)
 // @description  从「115不大助手」拆分并增强的文件清理 / 空目录清理：排除规则、审核台、AI 复核、删除回执。
 // @license      GPL-3.0-or-later
@@ -14270,6 +14270,197 @@
 			html: escapeHtml(err instanceof Error ? err.message : String(err))
 		});
 	}
+	var WILD = Symbol("wild");
+	var MAX_BRANCHES = 64;
+	var MAX_CLASS_CHARS = 8;
+	var Bail = class extends Error {};
+	var EMPTY = [[]];
+	var ANY = [[WILD]];
+	function concat(a, b) {
+		if (a.length * b.length > MAX_BRANCHES) throw new Bail();
+		const out = [];
+		for (const x of a) for (const y of b) out.push([...x, ...y]);
+		return out;
+	}
+	function union(a, b) {
+		if (a.length + b.length > MAX_BRANCHES) throw new Bail();
+		return [...a, ...b];
+	}
+	var Parser = class {
+		src;
+		i = 0;
+		constructor(src) {
+			this.src = src;
+		}
+		parse() {
+			const r = this.alt();
+			if (this.i < this.src.length) throw new Bail();
+			return r;
+		}
+		peek() {
+			return this.src[this.i];
+		}
+		alt() {
+			let r = this.seq();
+			while (this.peek() === "|") {
+				this.i++;
+				r = union(r, this.seq());
+			}
+			return r;
+		}
+		seq() {
+			let r = EMPTY;
+			for (;;) {
+				const ch = this.peek();
+				if (ch === void 0 || ch === "|" || ch === ")") return r;
+				r = concat(r, this.quantified(this.atom()));
+			}
+		}
+		quantified(a) {
+			const ch = this.peek();
+			let min;
+			let max;
+			if (ch === "?") [min, max] = [0, 1];
+			else if (ch === "*") [min, max] = [0, Infinity];
+			else if (ch === "+") [min, max] = [1, Infinity];
+			else if (ch === "{") {
+				const m = /^\{(\d+)(,(\d*))?\}/.exec(this.src.slice(this.i));
+				if (!m) return a;
+				this.i += m[0].length - 1;
+				min = Number(m[1]);
+				max = m[2] === void 0 ? min : m[3] === "" ? Infinity : Number(m[3]);
+			} else return a;
+			this.i++;
+			if (this.peek() === "?") this.i++;
+			if (min === 1 && max === 1) return a;
+			if (min === 0 && max === 1) return union(a, EMPTY);
+			if (min === 0) return ANY;
+			return a.map((b) => [...b, WILD]);
+		}
+		atom() {
+			const ch = this.src[this.i++];
+			switch (ch) {
+				case "(": return this.group();
+				case "[": return this.charClass();
+				case "\\": return this.escape();
+				case ".": return ANY;
+				case "^":
+				case "$": return EMPTY;
+				case "*":
+				case "+":
+				case "?": throw new Bail();
+				case "{":
+					if (/^\d+(,\d*)?\}/.test(this.src.slice(this.i))) throw new Bail();
+					return [[ch]];
+				default: return [[ch]];
+			}
+		}
+		group() {
+			let lookaround = false;
+			if (this.src.startsWith("?:", this.i)) this.i += 2;
+			else if (/^\?<?[=!]/.test(this.src.slice(this.i))) {
+				lookaround = true;
+				this.i += this.src[this.i + 1] === "<" ? 3 : 2;
+			} else if (this.src.startsWith("?<", this.i)) {
+				const end = this.src.indexOf(">", this.i);
+				if (end < 0) throw new Bail();
+				this.i = end + 1;
+			}
+			const inner = this.alt();
+			if (this.src[this.i++] !== ")") throw new Bail();
+			return lookaround ? EMPTY : inner;
+		}
+		charClass() {
+			const chars = new Set();
+			let wild = false;
+			if (this.peek() === "^") {
+				wild = true;
+				this.i++;
+			}
+			for (;;) {
+				if (this.i >= this.src.length) throw new Bail();
+				let ch = this.src[this.i++];
+				if (ch === "]") break;
+				if (ch === "\\") {
+					const lit = this.escapedLiteral();
+					if (lit === null) {
+						wild = true;
+						continue;
+					}
+					ch = lit;
+				}
+				if (this.peek() === "-" && this.src[this.i + 1] !== "]" && this.i + 1 < this.src.length) {
+					wild = true;
+					this.i++;
+					if (this.src[this.i++] === "\\") this.escapedLiteral();
+					continue;
+				}
+				chars.add(ch);
+			}
+			if (wild || chars.size === 0 || chars.size > MAX_CLASS_CHARS) return ANY;
+			return [...chars].map((c) => [c]);
+		}
+		escapedLiteral() {
+			const ch = this.src[this.i++];
+			if (ch === void 0) throw new Bail();
+			if (/[dDwWsSbB1-9]/.test(ch)) return null;
+			if (ch === "k" && this.peek() === "<") {
+				const end = this.src.indexOf(">", this.i);
+				if (end < 0) throw new Bail();
+				this.i = end + 1;
+				return null;
+			}
+			if (ch === "x" || ch === "u") {
+				const len = ch === "x" ? 2 : 4;
+				const hex = this.src.slice(this.i, this.i + len);
+				if (!new RegExp(`^[0-9a-fA-F]{${len}}$`).test(hex)) return ch;
+				this.i += len;
+				return String.fromCharCode(parseInt(hex, 16));
+			}
+			if (/[0cfnrtv]/.test(ch)) return null;
+			return ch;
+		}
+		escape() {
+			const at = this.src[this.i];
+			if (at === "b" || at === "B") {
+				this.i++;
+				return EMPTY;
+			}
+			const lit = this.escapedLiteral();
+			return lit === null ? ANY : [[lit]];
+		}
+	};
+	function longestFragment(branch) {
+		let best = "";
+		let cur = "";
+		for (const t of branch) if (t === WILD) {
+			if (cur.length > best.length) best = cur;
+			cur = "";
+		} else cur += t;
+		return cur.length > best.length ? cur : best;
+	}
+	function regexSearchTerms(source) {
+		let branches;
+		try {
+			branches = new Parser(source).parse();
+		} catch (e) {
+			if (e instanceof Bail) return null;
+			throw e;
+		}
+		const frags = new Set();
+		for (const b of branches) {
+			const f = longestFragment(b).trim();
+			if (f === "") return null;
+			frags.add(f);
+		}
+		const list = [...frags].sort((a, b) => a.length - b.length);
+		const out = [];
+		for (const f of list) if (!out.some((o) => f.toLowerCase().includes(o.toLowerCase()))) out.push(f);
+		return out.length > 8 ? null : out;
+	}
+	function keywordSearchTerms(rule) {
+		return rule.isRegexp ? regexSearchTerms(rule.pattern) : [rule.pattern];
+	}
 	var GroupType = function(GroupType) {
 		GroupType[GroupType["suffix"] = 0] = "suffix";
 		GroupType[GroupType["keyword"] = 1] = "keyword";
@@ -14344,8 +14535,8 @@
 		return "https://115.com/?url=" + encodeURIComponent(inner) + "&submode=wangpan&mode=search";
 	}
 	function searchValueOf(rule) {
-		if (rule.type === PatternType.filter) return rule.pattern;
-		return rule.isRegexp ? rule.pattern.replace(/^\^/, "").replace(/\$$/, "") : rule.pattern;
+		if (rule.type === PatternType.filter || !rule.isRegexp) return rule.pattern;
+		return keywordSearchTerms(rule)?.[0] ?? rule.pattern.replace(/^\^/, "").replace(/\$$/, "");
 	}
 	function wangpanFrame() {
 		const w = pageWindow();
@@ -14950,6 +15141,7 @@
 			queriedAt: null,
 			pool: new CandidatePool(opts.wrap),
 			fullList: null,
+			dirList: null,
 			items: new Map()
 		};
 	}
@@ -15012,6 +15204,57 @@
 		}
 		return s.fullList;
 	}
+	async function ensureDirList(s, deps) {
+		if (!s.dirList) {
+			const out = [];
+			const seen = new Set([s.cid]);
+			const queue = [s.cid];
+			while (queue.length) {
+				const cid = queue.shift();
+				const items = await listAll(deps.http, listParams({
+					cid,
+					limit: PAGE_SIZE,
+					nf: 1
+				}), deps.listInterval ?? 50);
+				for (const it of items) {
+					if (it.fid || !it.cid || seen.has(it.cid)) continue;
+					seen.add(it.cid);
+					out.push(it);
+					queue.push(it.cid);
+				}
+			}
+			s.dirList = out;
+			rememberItems(s, out);
+		}
+		return s.dirList;
+	}
+	async function collectDirCandidates(s, rule, deps) {
+		const terms = keywordSearchTerms(rule);
+		if (terms) {
+			let items = [];
+			let truncated = false;
+			for (const term of terms) {
+				const r = await searchAll(deps.http, searchParams({
+					search_value: term,
+					cid: s.cid,
+					limit: PAGE_SIZE
+				}), deps.searchInterval ?? 100);
+				items = items.concat(r.items);
+				truncated ||= r.truncated;
+			}
+			if (!rule.isRegexp || !truncated) {
+				rememberItems(s, items);
+				return {
+					items,
+					truncated
+				};
+			}
+		}
+		return {
+			items: await ensureDirList(s, deps),
+			truncated: false
+		};
+	}
 	var refOf = (group, rule) => ({
 		groupType: group.type,
 		groupId: group.id,
@@ -15059,16 +15302,8 @@
 		s.pool.removeRef(ref);
 		let items;
 		let truncated = false;
-		if (rule.type === PatternType.dirKeyword) {
-			const r = await searchAll(deps.http, searchParams({
-				search_value: rule.pattern,
-				cid: s.cid,
-				limit: PAGE_SIZE
-			}), deps.searchInterval ?? 100);
-			items = r.items;
-			truncated = r.truncated;
-			rememberItems(s, items);
-		} else items = await ensureFullList(s, deps);
+		if (rule.type === PatternType.dirKeyword) ({items, truncated} = await collectDirCandidates(s, rule, deps));
+		else items = await ensureFullList(s, deps);
 		markQueried(s);
 		const { ids, size } = matchKeyword(rule, items, groupMaxMB);
 		for (const id of ids) {
