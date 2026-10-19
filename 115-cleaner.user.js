@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         115 清理工具 (cex)
 // @namespace    com.songxff.115-cleaner
-// @version      0.1.1
+// @version      0.2.0
 // @author       songxff (based on 115不大助手 by 生瓜太保)
 // @description  从「115不大助手」拆分并增强的文件清理 / 空目录清理：排除规则、审核台、AI 复核、删除回执。
 // @license      GPL-3.0-or-later
@@ -7242,7 +7242,56 @@
 	_css("/*!\nPure v3.1.0\nCopyright 2013 Yahoo!\nLicensed under the BSD License.\nhttps://github.com/pure-css/pure/blob/main/LICENSE\n*/\n.pure-form input[type=color],.pure-form input[type=date],.pure-form input[type=datetime-local],.pure-form input[type=datetime],.pure-form input[type=email],.pure-form input[type=month],.pure-form input[type=number],.pure-form input[type=password],.pure-form input[type=search],.pure-form input[type=tel],.pure-form input[type=text],.pure-form input[type=time],.pure-form input[type=url],.pure-form input[type=week],.pure-form select,.pure-form textarea{vertical-align:middle;box-sizing:border-box;border:1px solid #ccc;border-radius:4px;padding:.5em .6em;display:inline-block;box-shadow:inset 0 1px 3px #ddd}.pure-form input:not([type]){box-sizing:border-box;border:1px solid #ccc;border-radius:4px;padding:.5em .6em;display:inline-block;box-shadow:inset 0 1px 3px #ddd}.pure-form input[type=color]{padding:.2em .5em}.pure-form input[type=color]:focus,.pure-form input[type=date]:focus,.pure-form input[type=datetime-local]:focus,.pure-form input[type=datetime]:focus,.pure-form input[type=email]:focus,.pure-form input[type=month]:focus,.pure-form input[type=number]:focus,.pure-form input[type=password]:focus,.pure-form input[type=search]:focus,.pure-form input[type=tel]:focus,.pure-form input[type=text]:focus,.pure-form input[type=time]:focus,.pure-form input[type=url]:focus,.pure-form input[type=week]:focus,.pure-form select:focus,.pure-form textarea:focus,.pure-form input:not([type]):focus{border-color:#129fea;outline:0}.pure-form input[type=checkbox]:focus,.pure-form input[type=file]:focus,.pure-form input[type=radio]:focus{outline:1px auto #129fea}.pure-form .pure-checkbox,.pure-form .pure-radio{margin:.5em 0;display:block}.pure-form input[type=color][disabled],.pure-form input[type=date][disabled],.pure-form input[type=datetime-local][disabled],.pure-form input[type=datetime][disabled],.pure-form input[type=email][disabled],.pure-form input[type=month][disabled],.pure-form input[type=number][disabled],.pure-form input[type=password][disabled],.pure-form input[type=search][disabled],.pure-form input[type=tel][disabled],.pure-form input[type=text][disabled],.pure-form input[type=time][disabled],.pure-form input[type=url][disabled],.pure-form input[type=week][disabled],.pure-form select[disabled],.pure-form textarea[disabled],.pure-form input:not([type])[disabled]{cursor:not-allowed;color:#cad2d3;background-color:#eaeded}.pure-form input[readonly],.pure-form select[readonly],.pure-form textarea[readonly]{color:#777;background-color:#eee;border-color:#ccc}.pure-form input:focus:invalid,.pure-form select:focus:invalid,.pure-form textarea:focus:invalid{color:#b94a48;border-color:#e9322d}.pure-form input[type=checkbox]:focus:invalid:focus,.pure-form input[type=file]:focus:invalid:focus,.pure-form input[type=radio]:focus:invalid:focus{outline-color:#e9322d}.pure-form select{background-color:#fff;border:1px solid #ccc;height:2.25em}.pure-form select[multiple]{height:auto}.pure-form label{margin:.5em 0 .2em}.pure-form fieldset{border:0;margin:0;padding:.35em 0 .75em}.pure-form legend{color:#333;border-bottom:1px solid #e5e5e5;width:100%;margin-bottom:.3em;padding:.3em 0;display:block}.pure-form-stacked input[type=color],.pure-form-stacked input[type=date],.pure-form-stacked input[type=datetime-local],.pure-form-stacked input[type=datetime],.pure-form-stacked input[type=email],.pure-form-stacked input[type=file],.pure-form-stacked input[type=month],.pure-form-stacked input[type=number],.pure-form-stacked input[type=password],.pure-form-stacked input[type=search],.pure-form-stacked input[type=tel],.pure-form-stacked input[type=text],.pure-form-stacked input[type=time],.pure-form-stacked input[type=url],.pure-form-stacked input[type=week],.pure-form-stacked label,.pure-form-stacked select,.pure-form-stacked textarea,.pure-form-stacked input:not([type]){margin:.25em 0;display:block}.pure-form-aligned input,.pure-form-aligned select,.pure-form-aligned textarea,.pure-form-message-inline{vertical-align:middle;display:inline-block}.pure-form-aligned textarea{vertical-align:top}.pure-form-aligned .pure-control-group{margin-bottom:.5em}.pure-form-aligned .pure-control-group label{text-align:right;vertical-align:middle;width:10em;margin:0 1em 0 0;display:inline-block}.pure-form-aligned .pure-controls{margin:1.5em 0 0 11em}.pure-form .pure-input-rounded,.pure-form input.pure-input-rounded{border-radius:2em;padding:.5em 1em}.pure-form .pure-group fieldset{margin-bottom:10px}.pure-form .pure-group input,.pure-form .pure-group textarea{border-radius:0;margin:0 0 -1px;padding:10px;display:block;position:relative;top:-1px}.pure-form .pure-group input:focus,.pure-form .pure-group textarea:focus{z-index:3}.pure-form .pure-group input:first-child,.pure-form .pure-group textarea:first-child{border-radius:4px 4px 0 0;margin:0;top:1px}.pure-form .pure-group input:first-child:last-child,.pure-form .pure-group textarea:first-child:last-child{border-radius:4px;margin:0;top:1px}.pure-form .pure-group input:last-child,.pure-form .pure-group textarea:last-child{border-radius:0 0 4px 4px;margin:0;top:-2px}.pure-form .pure-group button{margin:.35em 0}.pure-form .pure-input-1{width:100%}.pure-form .pure-input-3-4{width:75%}.pure-form .pure-input-2-3{width:66%}.pure-form .pure-input-1-2{width:50%}.pure-form .pure-input-1-3{width:33%}.pure-form .pure-input-1-4{width:25%}.pure-form-message-inline{color:#666;vertical-align:middle;padding-left:.3em;font-size:.875em;display:inline-block}.pure-form-message{color:#666;font-size:.875em;display:block}@media only screen and (width<=480px){.pure-form button[type=submit]{margin:.7em 0 0}.pure-form input:not([type]),.pure-form input[type=color],.pure-form input[type=date],.pure-form input[type=datetime-local],.pure-form input[type=datetime],.pure-form input[type=email],.pure-form input[type=month],.pure-form input[type=number],.pure-form input[type=password],.pure-form input[type=search],.pure-form input[type=tel],.pure-form input[type=text],.pure-form input[type=time],.pure-form input[type=url],.pure-form input[type=week],.pure-form label{margin-bottom:.3em;display:block}.pure-group input:not([type]),.pure-group input[type=color],.pure-group input[type=date],.pure-group input[type=datetime-local],.pure-group input[type=datetime],.pure-group input[type=email],.pure-group input[type=month],.pure-group input[type=number],.pure-group input[type=password],.pure-group input[type=search],.pure-group input[type=tel],.pure-group input[type=text],.pure-group input[type=time],.pure-group input[type=url],.pure-group input[type=week]{margin-bottom:0}.pure-form-aligned .pure-control-group label{text-align:left;width:100%;margin-bottom:.3em;display:block}.pure-form-aligned .pure-controls{margin:1.5em 0 0}.pure-form-message,.pure-form-message-inline{padding:.2em 0 .8em;font-size:.75em;display:block}}");
 	_css("/*!\nPure v3.1.0\nCopyright 2013 Yahoo!\nLicensed under the BSD License.\nhttps://github.com/pure-css/pure/blob/main/LICENSE\n*/\n.pure-table{border-collapse:collapse;border-spacing:0;empty-cells:show;border:1px solid #cbcbcb}.pure-table caption{color:#000;text-align:center;padding:1em 0;font:italic 85%/1 arial,sans-serif}.pure-table td,.pure-table th{font-size:inherit;border-width:0 0 0 1px;border-left-style:solid;border-left-color:#cbcbcb;margin:0;padding:.5em 1em;overflow:visible}.pure-table thead{color:#000;text-align:left;vertical-align:bottom;background-color:#e0e0e0}.pure-table td{background-color:#0000}.pure-table-odd td,.pure-table-striped tr:nth-child(2n-1) td{background-color:#f2f2f2}.pure-table-bordered td{border-bottom:1px solid #cbcbcb}.pure-table-bordered tbody>tr:last-child>td{border-bottom-width:0}.pure-table-horizontal td,.pure-table-horizontal th{border-width:0 0 1px;border-bottom-style:solid;border-bottom-color:#cbcbcb}.pure-table-horizontal tbody>tr:last-child>td{border-bottom-width:0}");
 	_css(".swal2-container{z-index:99999999!important}.cex-text-primary{color:#1890ff}.cex-text-success{color:#13ce66}.cex-text-warning{color:#e6a23c}.cex-text-danger{color:#ff4949}.cex-text-info{color:#909399}.cex-small{font-size:12px}.cex-label{color:#fff;background:#909399;border-radius:4px;margin-right:2px;padding:1px 4px;font-size:11px}.cex-label.primary{background:#1890ff}.cex-label.success{background:#13ce66}.cex-label.warning{background:#e6a23c}.cex-label.danger{background:#ff4949}.cex-label.plain{color:#409eff;background:#ecf5ff}.pure-button{border-radius:6px}.button-xsmall{padding:.2em .5em;font-size:12px}.button-small{font-size:85%}.button-success,.button-error,.button-warning,.button-secondary{color:#fff;text-shadow:0 1px 1px #0003}.button-success{background:#1cb841}.button-error{background:#ca3c3c}.button-warning{background:#df7514}.button-secondary{background:#42b8dd}.cex-drawer{visibility:hidden}.cex-drawer.is-visible{visibility:visible}.cex-drawer.is-open .cex-drawer__overlay{opacity:.5}.cex-drawer.is-open .cex-drawer__content{transform:translate(0)}.cex-drawer__overlay{z-index:9990;opacity:0;background:#000;transition-property:opacity;position:fixed;inset:0}.cex-drawer__content{z-index:9999;width:100%;transition-property:transform;position:fixed;top:0;bottom:0;right:0;overflow:auto;transform:translate(100%);box-shadow:0 2px 6px #777}.cex-panel{color:#333;background:#fff;padding:10px 20px 200px;font-size:13px}.cex-panel.is-busy{cursor:wait}.cex-panel.is-busy button,.cex-panel.is-busy input,.cex-panel.is-busy select{pointer-events:none;opacity:.6}.cex-bar{flex-wrap:wrap;align-items:center;gap:8px;padding-bottom:10px;display:flex}.cex-bar .cex-title{color:#15110c;font-size:18px;font-weight:700}.cex-path a{color:#409eff;margin-right:4px}.cex-path a:hover{text-decoration:underline}.cex-box{margin-bottom:24px}.cex-box .cex-box-title{color:#0078e6;margin-right:8px;font-size:16px}.cex-box input.cex-size{text-align:center;width:90px}.cex-table{border-collapse:collapse;width:100%;max-width:1200px;font-size:12px}.cex-table th,.cex-table td{vertical-align:top;word-break:break-all;border:1px solid #ddd;padding:6px 8px}.cex-table thead th{z-index:1;background:#f2f2f2;position:sticky;top:0}.cex-table tr.is-dimmed{opacity:.45}.cex-table tr.is-excluded td{color:#aaa}.cex-table tr.is-risk{background:#fff3f0}.cex-table tr.is-active{background:#f7ffc3}.cex-table td.cex-actions button{margin:0 4px 4px 0}.cex-btn-group button{border:none;border-radius:0;padding:2px 8px}.cex-btn-group button:first-child{border-radius:4px 0 0 4px}.cex-btn-group button:last-child{border-radius:0 4px 4px 0}.cex-dir-switcher{width:360px;padding:10px;font-size:12px}.cex-dir-switcher a{color:#2877f8;padding:3px 0;display:block}.cex-dir-switcher input{width:230px;margin-right:6px}.cex-help{background:#fdffdf;border-radius:6px;margin-bottom:16px;padding:10px;font-size:12px}.cex-help ul{margin:4px 0 4px 18px}.cex-progress{vertical-align:middle;background:#eee;border-radius:3px;width:300px;height:6px;display:inline-block;overflow:hidden}.cex-progress>i{background:#1890ff;height:100%;display:block}.cex-form .pure-control-group label{width:220px}.cex-form textarea{width:100%;font-size:12px;line-height:20px}.cex-trigger .pure-button{color:#fff;background:#4faa4f;border-radius:4px;margin-left:8px;padding:0 6px;line-height:30px}.cex-logs{white-space:pre-wrap;background:#f4f4f4;max-height:250px;margin-bottom:16px;padding:10px;font-size:12px;line-height:20px;overflow-y:auto}");
-	var sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+	var worker;
+	var pending = new Map();
+	var seq$1 = 0;
+	var WORKER_SRC = "onmessage=function(e){var d=e.data;setTimeout(function(){postMessage(d[0])},d[1])}";
+	function getWorker() {
+		if (worker !== void 0) return worker;
+		try {
+			if (typeof Worker === "undefined" || typeof URL === "undefined" || typeof URL.createObjectURL !== "function") {
+				worker = null;
+				return worker;
+			}
+			const url = URL.createObjectURL(new Blob([WORKER_SRC], { type: "text/javascript" }));
+			const w = new Worker(url);
+			w.onmessage = (e) => {
+				const fn = pending.get(e.data);
+				pending.delete(e.data);
+				fn?.();
+			};
+			w.onerror = () => {
+				worker = null;
+			};
+			worker = w;
+		} catch {
+			worker = null;
+		}
+		return worker;
+	}
+	function bgSleep(ms) {
+		return new Promise((resolve) => {
+			let done = false;
+			const finish = () => {
+				if (done) return;
+				done = true;
+				clearTimeout(fallback);
+				resolve();
+			};
+			const fallback = setTimeout(finish, ms);
+			const w = ms > 0 ? getWorker() : null;
+			if (w) {
+				const id = ++seq$1;
+				pending.set(id, () => finish());
+				try {
+					w.postMessage([id, ms]);
+				} catch {
+					pending.delete(id);
+				}
+			}
+		});
+	}
+	var sleep = (ms) => bgSleep(ms);
 	function chunk(list, size) {
 		const out = [];
 		for (let i = 0; i < list.length; i += size) out.push(list.slice(i, i + size));
@@ -7480,7 +7529,16 @@
 		return out;
 	}
 	var gmGet = (key, def) => GM_getValue(key, def);
-	var gmSet = (key, value) => GM_setValue(key, value);
+	var writeHook = null;
+	var setWriteHook = (fn) => {
+		writeHook = fn;
+	};
+	var gmSetSilent = (key, value) => GM_setValue(key, value);
+	var gmSet = (key, value) => {
+		const prev = writeHook ? GM_getValue(key, void 0) : void 0;
+		gmSetSilent(key, value);
+		writeHook?.(key, prev, value);
+	};
 	var gmMenu = (name, fn) => {
 		GM_registerMenuCommand(name, fn);
 	};
@@ -7971,7 +8029,7 @@
 		if (text === "") throw new Error("读取内容为空字符串");
 		return text;
 	}
-	var errText$2 = (e) => e instanceof Error ? e.message : String(e);
+	var errText$3 = (e) => e instanceof Error ? e.message : String(e);
 	async function exportTreeText(http, cid, keepTree = false, log = () => void 0) {
 		log(`========导出目录树(目录ID=${cid})========`);
 		const exportId = await startExportTree(http, cid);
@@ -7985,7 +8043,7 @@
 			text = await readTextFile(info.url, "utf-16le");
 			log("目录树文件内容读取完成");
 		} catch (e) {
-			log(`读取目录树文件内容失败，${errText$2(e)}`);
+			log(`读取目录树文件内容失败，${errText$3(e)}`);
 		}
 		if (keepTree) log(`目录树文件保留，不会被删除。文件: ${info.fileName}`);
 		else {
@@ -9795,7 +9853,7 @@
 		if (Object.getOwnPropertySymbols && Object.getOwnPropertyDescriptor) return Object.keys(thing).concat(Object.getOwnPropertySymbols(thing).filter((symbol) => Object.getOwnPropertyDescriptor(thing, symbol).enumerable));
 		return Object.keys(thing);
 	};
-	function mergeConfig(config1, config2) {
+	function mergeConfig$1(config1, config2) {
 		config1 = config1 || {};
 		config2 = config2 || {};
 		const config = Object.create(null);
@@ -9896,7 +9954,7 @@
 	}
 	var encodeUTF8$1 = (str) => encodeURIComponent(str).replace(/%([0-9A-F]{2})/gi, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
 	function resolveConfig(config) {
-		const newConfig = mergeConfig({}, config);
+		const newConfig = mergeConfig$1({}, config);
 		const own = (key) => utils_default.hasOwnProp(newConfig, key) ? newConfig[key] : void 0;
 		const data = own("data");
 		let withXSRFToken = own("withXSRFToken");
@@ -10715,7 +10773,7 @@
 				config = config || {};
 				config.url = configOrUrl;
 			} else config = configOrUrl || {};
-			config = mergeConfig(this.defaults, config);
+			config = mergeConfig$1(this.defaults, config);
 			const { transitional, paramsSerializer, headers } = config;
 			if (transitional !== void 0) validator_default.assertOptions(transitional, {
 				silentJSONParsing: validators.transitional(validators.boolean),
@@ -10801,7 +10859,7 @@
 			return promise;
 		}
 		getUri(config) {
-			config = mergeConfig(this.defaults, config);
+			config = mergeConfig$1(this.defaults, config);
 			return buildURL(buildFullPath(config.baseURL, config.url, config.allowAbsoluteUrls, config), config.params, config.paramsSerializer);
 		}
 	};
@@ -10812,7 +10870,7 @@
 		"options"
 	], function forEachMethodNoData(method) {
 		Axios.prototype[method] = function(url, config) {
-			return this.request(mergeConfig(config || {}, {
+			return this.request(mergeConfig$1(config || {}, {
 				method,
 				url,
 				data: config && utils_default.hasOwnProp(config, "data") ? config.data : void 0
@@ -10827,7 +10885,7 @@
 	], function forEachMethodWithData(method) {
 		function generateHTTPMethod(isForm) {
 			return function httpMethod(url, data, config) {
-				return this.request(mergeConfig(config || {}, {
+				return this.request(mergeConfig$1(config || {}, {
 					method,
 					headers: isForm ? { "Content-Type": "multipart/form-data" } : {},
 					url,
@@ -10995,7 +11053,7 @@
 		utils_default.extend(instance, Axios.prototype, context, { allOwnKeys: true });
 		utils_default.extend(instance, context, null, { allOwnKeys: true });
 		instance.create = function create(instanceConfig) {
-			return createInstance(mergeConfig(defaultConfig, instanceConfig));
+			return createInstance(mergeConfig$1(defaultConfig, instanceConfig));
 		};
 		return instance;
 	}
@@ -11013,7 +11071,7 @@
 	};
 	axios.spread = spread;
 	axios.isAxiosError = isAxiosError;
-	axios.mergeConfig = mergeConfig;
+	axios.mergeConfig = mergeConfig$1;
 	axios.AxiosHeaders = AxiosHeaders;
 	axios.formToJSON = (thing) => formDataToJSON(utils_default.isHTMLForm(thing) ? new FormData(thing) : thing);
 	axios.getAdapter = adapters_default.getAdapter;
@@ -11441,6 +11499,7 @@
 			delete: async (k) => void m.delete(k),
 			all: async () => [...m.values()].map(clone),
 			keys: async () => [...m.keys()],
+			entries: async () => [...m.entries()].map(([k, v]) => [k, clone(v)]),
 			clear: async () => m.clear(),
 			count: async () => m.size
 		};
@@ -11452,6 +11511,11 @@
 			delete: async (k) => db.delete(store, k),
 			all: async () => await db.getAll(store),
 			keys: async () => (await db.getAllKeys(store)).map(String),
+			entries: async () => {
+				const tx = db.transaction(store);
+				const [keys, values] = await Promise.all([tx.store.getAllKeys(), tx.store.getAll()]);
+				return keys.map((k, i) => [String(k), values[i]]);
+			},
 			clear: async () => db.clear(store),
 			count: async () => db.count(store)
 		};
@@ -11505,7 +11569,11 @@
 		uiPrefs: "cex_ui_prefs",
 		recentDirs: "cex_recent_dirs",
 		opLock: "cex_op_lock",
-		coexistNotice: "cex_coexist_notice"
+		coexistNotice: "cex_coexist_notice",
+		notifyConfig: "cex_notify_config",
+		syncEnabled: "cex_sync_enabled",
+		syncMeta: "cex_sync_meta",
+		syncDirCid: "cex_sync_dir_cid"
 	};
 	var COMPAT_KEYS = [
 		KEYS.cleanerConfig,
@@ -11513,6 +11581,14 @@
 		KEYS.keywordGroups,
 		KEYS.emptyCleanerConfig
 	];
+	var SYNC_SETTING_KEYS = [
+		KEYS.cleanerConfig,
+		KEYS.emptyCleanerConfig,
+		KEYS.aiConfig,
+		KEYS.uiPrefs,
+		KEYS.notifyConfig
+	];
+	var SYNC_GROUP_KEYS = [KEYS.suffixGroups, KEYS.keywordGroups];
 	var LOCK_TTL_MS = 6e5;
 	function createOpLock(now = () => Date.now()) {
 		return {
@@ -11530,10 +11606,790 @@
 			}
 		};
 	}
+	var INIT_URL = "https://uplb.115.com/3.0/sampleinitupload.php";
+	var pageFetch = (u, i) => fetch(u, i);
+	async function uploadText(cid, name, text, opts = {}) {
+		const f = opts.fetch ?? pageFetch;
+		const ctl = new AbortController();
+		const timer = setTimeout(() => ctl.abort(), opts.timeoutMs ?? 12e4);
+		try {
+			const initRes = await f(INIT_URL, {
+				method: "POST",
+				credentials: "include",
+				headers: { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8" },
+				body: new URLSearchParams({
+					filename: name,
+					target: `U_1_${cid}`
+				}),
+				signal: ctl.signal
+			});
+			if (!initRes.ok) throw new Error(`上传初始化失败：HTTP ${initRes.status}`);
+			const init = await initRes.json();
+			if (!init.object || !init.host || !init.policy || !init.signature || !init.accessid || !init.callback) throw new Error("上传初始化失败：115 没有返回上传凭证");
+			const form = new FormData();
+			form.append("name", name);
+			form.append("key", init.object);
+			form.append("policy", init.policy);
+			form.append("OSSAccessKeyId", init.accessid);
+			form.append("success_action_status", "200");
+			form.append("callback", init.callback);
+			form.append("signature", init.signature);
+			form.append("file", new File([text], name, { type: "text/plain" }));
+			const res = await f(init.host.replace(/^http:/, "https:"), {
+				method: "POST",
+				body: form,
+				signal: ctl.signal
+			});
+			if (!res.ok) throw new Error(`上传失败：HTTP ${res.status}`);
+			const b = await res.json();
+			if (!b.state) throw new Error(b.message || "上传失败");
+			const id = String(b.data?.file_id ?? "");
+			if (!id) throw new Error("上传后 115 没有返回文件 id");
+			return {
+				id,
+				pickCode: String(b.data?.pick_code ?? "")
+			};
+		} catch (e) {
+			if (ctl.signal.aborted) throw new Error("上传超时");
+			throw e;
+		} finally {
+			clearTimeout(timer);
+		}
+	}
+	async function readText(http, pickCode, f = pageFetch) {
+		const { data } = await http.get(`${WEBAPI}/files/download?pickcode=${encodeURIComponent(pickCode)}`, { timeout: 6e4 });
+		if (!data?.state || !data.file_url) throw new Error(data?.msg || data?.error || "取不到下载地址");
+		const res = await f(data.file_url, { credentials: "include" });
+		if (!res.ok) throw new Error(`读取失败：HTTP ${res.status}`);
+		return res.text();
+	}
+	async function createFolder(http, pid, name) {
+		const { data } = await http.post(`${WEBAPI}/files/add`, new URLSearchParams({
+			pid,
+			cname: name
+		}), { timeout: 6e4 });
+		const id = String(data?.cid ?? data?.file_id ?? "");
+		if (!data?.state || !id) throw new Error(data?.error || "新建文件夹失败");
+		return id;
+	}
+	var GroupType = function(GroupType) {
+		GroupType[GroupType["suffix"] = 0] = "suffix";
+		GroupType[GroupType["keyword"] = 1] = "keyword";
+		return GroupType;
+	}({});
+	var PatternType = function(PatternType) {
+		PatternType[PatternType["filter"] = 0] = "filter";
+		PatternType[PatternType["dirKeyword"] = 1] = "dirKeyword";
+		PatternType[PatternType["fileKeyword"] = 2] = "fileKeyword";
+		PatternType[PatternType["fileHash"] = 3] = "fileHash";
+		return PatternType;
+	}({});
+	var PATTERN_TYPE_LABEL = {
+		[0]: "筛选",
+		[1]: "目录名关键词",
+		[2]: "文件名关键词",
+		[3]: "文件sha1"
+	};
+	var KEYWORD_CATEGORY_LABEL = {
+		all: "全部",
+		file: "文件",
+		dir: "目录"
+	};
+	var RESULT_FILTER_LABEL = {
+		all: "全部",
+		matched: "有匹配",
+		unmatched: "无匹配"
+	};
+	var refKey = (r) => `${r.groupType}|${r.groupId}|${r.ruleValue}`;
+	var describeRef = (r) => `${r.groupType === GroupType.suffix ? "后缀" : "关键词"}:${r.ruleValue}`;
+	function candidateFromItem(it) {
+		const isDir = !it.fid;
+		const sz = parseFloat(String(it.s));
+		return {
+			id: it.fid || it.cid,
+			isDir,
+			name: it.n,
+			size: isDir || !Number.isFinite(sz) ? 0 : sz,
+			sha1: it.sha || void 0,
+			parentId: String((isDir ? it.pid : it.cid) ?? ""),
+			parentName: it.dp || void 0,
+			hits: [],
+			selected: true
+		};
+	}
+	var CandidatePool = class {
+		wrap;
+		map = new Map();
+		constructor(wrap = (o) => o) {
+			this.wrap = wrap;
+		}
+		upsert(it, ref) {
+			const id = it.fid || it.cid;
+			let c = this.map.get(id);
+			if (!c) {
+				c = this.wrap(candidateFromItem(it));
+				this.map.set(id, c);
+			}
+			const k = refKey(ref);
+			if (!c.hits.some((h) => refKey(h) === k)) c.hits.push(ref);
+			return c;
+		}
+		get(id) {
+			return this.map.get(id);
+		}
+		values() {
+			return [...this.map.values()];
+		}
+		byRef(ref) {
+			const k = refKey(ref);
+			return this.values().filter((c) => c.hits.some((h) => refKey(h) === k));
+		}
+		byRefs(refs) {
+			const keys = new Set(refs.map(refKey));
+			return this.values().filter((c) => c.hits.some((h) => keys.has(refKey(h))));
+		}
+		removeRef(ref) {
+			const k = refKey(ref);
+			for (const [id, c] of this.map) {
+				c.hits = c.hits.filter((h) => refKey(h) !== k);
+				if (c.excludedBy && refKey(c.excludedBy.ref) === k) c.excludedBy = void 0;
+				if (!c.hits.length) this.map.delete(id);
+			}
+		}
+		clear() {
+			this.map.clear();
+		}
+		get size() {
+			return this.map.size;
+		}
+	};
+	function createSession(cid, path, opts = {}) {
+		return {
+			cid,
+			path,
+			startedAt: opts.now ?? Date.now(),
+			queriedAt: null,
+			pool: new CandidatePool(opts.wrap),
+			fullList: null,
+			dirList: null,
+			items: new Map()
+		};
+	}
+	function pathFromCategory(cid, info) {
+		return [...info.paths.slice(1).map((p) => ({
+			id: String(p.file_id),
+			name: p.file_name
+		})), {
+			id: cid,
+			name: info.file_name
+		}];
+	}
+	var pathText = (path) => path.map((p) => p.name).join(" / ");
+	var rootPathString = (s) => "/" + s.path.map((p) => p.name).join("/");
+	function markQueried(s, now = Date.now()) {
+		if (s.queriedAt === null) s.queriedAt = now;
+	}
+	function rememberItems(s, items) {
+		for (const it of items) {
+			const id = it.fid || it.cid;
+			if (id && !s.items.has(id)) s.items.set(id, it);
+		}
+	}
+	function staleReason(s, activeCid, now = Date.now()) {
+		if (s.cid !== activeCid) return "目录已切换，请重新查询";
+		if (s.queriedAt === null) return "尚未查询，请先查询";
+		if (now - s.queriedAt > 18e5) return "查询已超过 30 分钟，请重新查询";
+		return null;
+	}
+	var emptyGroupState = () => ({
+		items: [],
+		at: {},
+		deleted: {},
+		orderAt: 0
+	});
+	var isObj$1 = (v) => !!v && typeof v === "object" && !Array.isArray(v);
+	function stableStringify(v) {
+		if (Array.isArray(v)) return `[${v.map(stableStringify).join(",")}]`;
+		if (isObj$1(v)) return `{${Object.keys(v).filter((k) => v[k] !== void 0).sort().map((k) => `${JSON.stringify(k)}:${stableStringify(v[k])}`).join(",")}}`;
+		return JSON.stringify(v) ?? "null";
+	}
+	var same$1 = (a, b) => stableStringify(a) === stableStringify(b);
+	function parseConfigDoc(text) {
+		let j;
+		try {
+			j = JSON.parse(text);
+		} catch {
+			throw new Error("云端配置文件不是有效的 JSON");
+		}
+		if (!isObj$1(j) || j.app !== "115-cleaner" || j.kind !== "config" || !isObj$1(j.settings) || !isObj$1(j.groups)) throw new Error("云端配置文件格式不对");
+		const groups = {};
+		for (const [k, g] of Object.entries(j.groups)) {
+			if (!isObj$1(g) || !Array.isArray(g.items)) throw new Error("云端配置文件格式不对");
+			groups[k] = {
+				items: g.items.filter((x) => isObj$1(x) && x.id !== void 0).map((x) => ({
+					...x,
+					id: String(x.id)
+				})),
+				at: isObj$1(g.at) ? g.at : {},
+				deleted: isObj$1(g.deleted) ? g.deleted : {},
+				orderAt: Number(g.orderAt) || 0
+			};
+		}
+		return {
+			...j,
+			groups
+		};
+	}
+	function parseCacheDoc(text) {
+		let j;
+		try {
+			j = JSON.parse(text);
+		} catch {
+			throw new Error("云端 AI 缓存文件不是有效的 JSON");
+		}
+		if (!isObj$1(j) || j.app !== "115-cleaner" || j.kind !== "ai-cache" || !isObj$1(j.entries)) throw new Error("云端 AI 缓存文件格式不对");
+		return {
+			...j,
+			clearedAt: Number(j.clearedAt) || 0
+		};
+	}
+	var itemAt = (s, it) => it ? s.at[it.id] ?? (Number(it.updatedAt) || 0) * 1e3 : -1;
+	function mergeGroups$1(local, remote, opts) {
+		const deleted = {};
+		for (const src of [local.deleted, remote.deleted]) for (const [id, t] of Object.entries(src)) if (t > opts.now - 15552e6) deleted[id] = Math.max(deleted[id] ?? 0, t);
+		const lMap = new Map(local.items.map((i) => [i.id, i]));
+		const rMap = new Map(remote.items.map((i) => [i.id, i]));
+		const kept = new Map();
+		if (opts.first) {
+			for (const it of remote.items) if (!(deleted[it.id] >= itemAt(remote, it))) kept.set(it.id, {
+				item: it,
+				at: itemAt(remote, it)
+			});
+			const labels = new Set(remote.items.map((i) => i.label));
+			for (const it of local.items) {
+				if (kept.has(it.id) || labels.has(it.label)) continue;
+				if (deleted[it.id] >= itemAt(local, it)) continue;
+				kept.set(it.id, {
+					item: it,
+					at: itemAt(local, it)
+				});
+			}
+		} else for (const id of new Set([...lMap.keys(), ...rMap.keys()])) {
+			const l = lMap.get(id);
+			const r = rMap.get(id);
+			const lt = itemAt(local, l);
+			const rt = itemAt(remote, r);
+			const pick = rt > lt ? {
+				item: r,
+				at: rt
+			} : {
+				item: l,
+				at: lt
+			};
+			if (!pick.item) continue;
+			if ((deleted[id] ?? -1) >= pick.at) continue;
+			kept.set(id, pick);
+		}
+		for (const id of kept.keys()) delete deleted[id];
+		const order = opts.first || remote.orderAt > local.orderAt ? [...remote.items, ...local.items] : [...local.items, ...remote.items];
+		const items = [];
+		const at = {};
+		for (const it of order) {
+			const k = kept.get(it.id);
+			if (!k || at[it.id] !== void 0) continue;
+			items.push(k.item);
+			at[it.id] = k.at;
+		}
+		return {
+			items,
+			at,
+			deleted,
+			orderAt: Math.max(local.orderAt, remote.orderAt)
+		};
+	}
+	function mergeSettings(local, remote, first) {
+		const out = {};
+		for (const key of new Set([...Object.keys(local), ...Object.keys(remote)])) {
+			const l = local[key];
+			const r = remote[key];
+			if (!r) out[key] = l;
+			else if (!l) out[key] = r;
+			else out[key] = first || r.at > l.at ? r : l;
+		}
+		return out;
+	}
+	function mergeConfig(local, remote, opts) {
+		if (!remote) return {
+			...local,
+			savedAt: opts.now
+		};
+		const groups = {};
+		for (const k of new Set([...Object.keys(local.groups), ...Object.keys(remote.groups)])) groups[k] = mergeGroups$1(local.groups[k] ?? emptyGroupState(), remote.groups[k] ?? emptyGroupState(), opts);
+		return {
+			...local,
+			savedAt: opts.now,
+			settings: mergeSettings(local.settings, remote.settings, opts.first),
+			groups
+		};
+	}
+	function sameConfig(a, b) {
+		return same$1(a.settings, b.settings) && same$1(a.groups, b.groups);
+	}
+	var better = (a, b) => {
+		if (a.source !== b.source) return a.source === "user";
+		return a.at > b.at;
+	};
+	function mergeCache(local, remote, now) {
+		if (!remote) return {
+			...local,
+			savedAt: now
+		};
+		const clearedAt = Math.max(local.clearedAt, remote.clearedAt);
+		const entries = {};
+		for (const src of [local.entries, remote.entries]) for (const [k, e] of Object.entries(src)) {
+			if (!e || e.at <= clearedAt) continue;
+			const cur = entries[k];
+			if (!cur || better(e, cur)) entries[k] = e;
+		}
+		return {
+			...local,
+			savedAt: now,
+			clearedAt,
+			entries
+		};
+	}
+	function sameCache(a, b) {
+		if (a.clearedAt !== b.clearedAt) return false;
+		const ak = Object.keys(a.entries);
+		if (ak.length !== Object.keys(b.entries).length) return false;
+		return ak.every((k) => same$1(a.entries[k], b.entries[k]));
+	}
+	var SYNC_DIR = ["box", "115-cleaner 配置"];
+	var CONFIG_FILE = "cex-sync.json";
+	var CACHE_FILE = "cex-ai-cache.json";
+	var SYNC_DIR_TEXT = `/${SYNC_DIR.join("/")}/`;
+	var SYNCED_EVENT = "cex:synced";
+	var CONFIG_PUSH_DELAY = 2e3;
+	var CACHE_PUSH_DELAY = 15e3;
+	var sameName = (a, b) => a.replace(/\s+/g, "") === b.replace(/\s+/g, "");
+	var cmpId = (a, b) => a.length - b.length || (a < b ? -1 : a > b ? 1 : 0);
+	var same = (a, b) => stableStringify(a) === stableStringify(b);
+	var errText$2 = (e) => e instanceof Error ? e.message : String(e);
+	var emptyMeta = () => ({
+		keyAt: {},
+		groups: {},
+		cacheClearedAt: 0,
+		lastSync: 0,
+		seen: {
+			config: "",
+			cache: ""
+		},
+		rev: {
+			config: 0,
+			cache: 0
+		},
+		synced: {
+			config: 0,
+			cache: 0
+		}
+	});
+	function loadMeta() {
+		const m = gmGet(KEYS.syncMeta, {});
+		const e = emptyMeta();
+		return {
+			...e,
+			...m,
+			seen: {
+				...e.seen,
+				...m.seen
+			},
+			rev: {
+				...e.rev,
+				...m.rev
+			},
+			synced: {
+				...e.synced,
+				...m.synced
+			}
+		};
+	}
+	var saveMeta = (m) => gmSetSilent(KEYS.syncMeta, m);
+	var groupMeta = (m, key) => m.groups[key] ?? {
+		at: {},
+		deleted: {},
+		orderAt: 0
+	};
+	var isSyncEnabled = () => gmGet(KEYS.syncEnabled, false);
+	var setSyncEnabled = (v) => gmSetSilent(KEYS.syncEnabled, v);
+	var asList = (v) => Array.isArray(v) ? v.filter((x) => x && typeof x === "object" && x.id !== void 0) : [];
+	function recordWrite(key, prev, next, now) {
+		if (SYNC_SETTING_KEYS.includes(key)) {
+			if (same(prev, next)) return null;
+			const m = loadMeta();
+			m.keyAt[key] = now;
+			m.rev.config++;
+			saveMeta(m);
+			return "config";
+		}
+		if (SYNC_GROUP_KEYS.includes(key)) {
+			const before = asList(prev);
+			const after = asList(next);
+			const prevMap = new Map(before.map((g) => [String(g.id), stableStringify(g)]));
+			const m = loadMeta();
+			const g = groupMeta(m, key);
+			let changed = false;
+			const ids = new Set();
+			for (const it of after) {
+				const id = String(it.id);
+				ids.add(id);
+				if (prevMap.get(id) !== stableStringify(it)) {
+					g.at[id] = now;
+					delete g.deleted[id];
+					changed = true;
+				}
+			}
+			for (const id of prevMap.keys()) {
+				if (ids.has(id)) continue;
+				g.deleted[id] = now;
+				delete g.at[id];
+				changed = true;
+			}
+			if (before.map((x) => String(x.id)).join() !== after.map((x) => String(x.id)).join()) {
+				g.orderAt = now;
+				changed = true;
+			}
+			if (!changed) return null;
+			m.groups[key] = g;
+			m.rev.config++;
+			saveMeta(m);
+			return "config";
+		}
+		return null;
+	}
+	function buildLocalConfig(m, now) {
+		const settings = {};
+		for (const key of SYNC_SETTING_KEYS) {
+			const value = gmGet(key, void 0);
+			if (value !== void 0) settings[key] = {
+				at: m.keyAt[key] ?? 0,
+				value
+			};
+		}
+		const groups = {};
+		for (const key of SYNC_GROUP_KEYS) {
+			const raw = gmGet(key, void 0);
+			if (raw === void 0) continue;
+			const g = groupMeta(m, key);
+			const items = asList(raw).map((x) => ({
+				...x,
+				id: String(x.id)
+			}));
+			groups[key] = {
+				...emptyGroupState(),
+				items,
+				at: { ...g.at },
+				deleted: { ...g.deleted },
+				orderAt: g.orderAt
+			};
+		}
+		return {
+			app: "115-cleaner",
+			kind: "config",
+			version: 1,
+			savedAt: now,
+			settings,
+			groups
+		};
+	}
+	function applyConfig(merged, local) {
+		let changed = false;
+		for (const [key, s] of Object.entries(merged.settings)) if (!same(local.settings[key]?.value, s.value)) {
+			gmSetSilent(key, s.value);
+			changed = true;
+		}
+		for (const [key, g] of Object.entries(merged.groups)) if (!same(local.groups[key]?.items, g.items)) {
+			gmSetSilent(key, g.items);
+			changed = true;
+		}
+		return changed;
+	}
+	function rememberConfig(m, merged) {
+		for (const [key, s] of Object.entries(merged.settings)) m.keyAt[key] = Math.max(m.keyAt[key] ?? 0, s.at);
+		for (const [key, g] of Object.entries(merged.groups)) {
+			const cur = groupMeta(m, key);
+			const at = { ...g.at };
+			for (const [id, t] of Object.entries(cur.at)) at[id] = Math.max(at[id] ?? 0, t);
+			const deleted = { ...g.deleted };
+			for (const [id, t] of Object.entries(cur.deleted)) if (t > (at[id] ?? 0)) deleted[id] = Math.max(deleted[id] ?? 0, t);
+			for (const id of Object.keys(deleted)) if ((at[id] ?? -1) >= deleted[id]) delete deleted[id];
+			m.groups[key] = {
+				at,
+				deleted,
+				orderAt: Math.max(cur.orderAt, g.orderAt)
+			};
+		}
+	}
+	var Retry = class extends Error {};
+	var CloudSync = class {
+		deps;
+		state = reactive({
+			status: "idle",
+			lastSync: 0,
+			error: ""
+		});
+		timer;
+		dueAt = 0;
+		running = null;
+		again = false;
+		lastAttempt = 0;
+		started = false;
+		cachePending = false;
+		cacheTimer;
+		constructor(deps) {
+			this.deps = deps;
+			if (!isSyncEnabled()) this.state.status = "off";
+			this.state.lastSync = loadMeta().lastSync;
+		}
+		start() {
+			if (this.started) return;
+			this.started = true;
+			setWriteHook((key, prev, next) => {
+				if (recordWrite(key, prev, next, this.now())) this.schedule(CONFIG_PUSH_DELAY);
+			});
+			window.addEventListener("focus", () => this.onFocus());
+			if (isSyncEnabled()) this.schedule(3e3);
+		}
+		markCacheChanged() {
+			if (!this.started) return;
+			clearTimeout(this.cacheTimer);
+			this.cacheTimer = setTimeout(() => this.schedule(0), CACHE_PUSH_DELAY);
+			if (this.cachePending) return;
+			this.cachePending = true;
+			const m = loadMeta();
+			m.rev.cache++;
+			saveMeta(m);
+		}
+		markCacheCleared() {
+			if (!this.started) return;
+			const m = loadMeta();
+			m.cacheClearedAt = this.now();
+			m.rev.cache++;
+			saveMeta(m);
+			this.schedule(CONFIG_PUSH_DELAY);
+		}
+		setEnabled(v) {
+			setSyncEnabled(v);
+			if (!v) {
+				clearTimeout(this.timer);
+				this.dueAt = 0;
+				if (this.state.status !== "syncing") this.state.status = "off";
+				return;
+			}
+			if (this.state.status === "off") this.state.status = "idle";
+			this.sync();
+		}
+		onFocus() {
+			if (isSyncEnabled() && this.now() - this.lastAttempt >= 6e4) this.sync();
+		}
+		schedule(ms) {
+			if (!isSyncEnabled()) return;
+			const due = this.now() + ms;
+			if (this.timer && this.dueAt && this.dueAt <= due) return;
+			clearTimeout(this.timer);
+			this.dueAt = due;
+			this.timer = setTimeout(() => {
+				this.timer = void 0;
+				this.dueAt = 0;
+				this.sync();
+			}, ms);
+		}
+		sync() {
+			clearTimeout(this.timer);
+			this.timer = void 0;
+			this.dueAt = 0;
+			if (this.running) {
+				this.again = true;
+				return this.running;
+			}
+			this.running = this.loop().finally(() => this.running = null);
+			return this.running;
+		}
+		async loop() {
+			do {
+				this.again = false;
+				await this.once();
+			} while (this.again);
+		}
+		async once() {
+			if (!isSyncEnabled()) {
+				this.state.status = "off";
+				return;
+			}
+			this.lastAttempt = this.now();
+			this.state.status = "syncing";
+			try {
+				await this.locked(() => this.run());
+				Object.assign(this.state, {
+					status: "ok",
+					error: "",
+					lastSync: loadMeta().lastSync
+				});
+			} catch (e) {
+				if (e instanceof Retry) {
+					this.state.status = "idle";
+					this.schedule(CONFIG_PUSH_DELAY);
+					return;
+				}
+				Object.assign(this.state, {
+					status: "error",
+					error: errText$2(e)
+				});
+			}
+		}
+		async run() {
+			const now = this.now();
+			const meta = loadMeta();
+			const first = !meta.lastSync;
+			let dir = await this.findDir(false);
+			const files = dir ? await this.listFiles(dir) : [];
+			const cfgFiles = files.filter((f) => f.n === CONFIG_FILE);
+			const cacheFiles = files.filter((f) => f.n === CACHE_FILE);
+			const stale = [];
+			let applied = false;
+			const ensureDir = async () => {
+				if (!dir) dir = await this.findDir(true);
+				return dir;
+			};
+			const cfgRev = meta.rev.config;
+			if (first || cfgRev !== meta.synced.config || (cfgFiles[0]?.fid ?? "") !== meta.seen.config) {
+				const remote = cfgFiles[0] ? parseConfigDoc(await this.read(cfgFiles[0])) : null;
+				const local = buildLocalConfig(meta, now);
+				const merged = mergeConfig(local, remote, {
+					first: first && !!remote,
+					now
+				});
+				if (loadMeta().rev.config !== cfgRev) throw new Retry();
+				applied = applyConfig(merged, local) || applied;
+				let newest = cfgFiles[0]?.fid ?? "";
+				if (!remote || !sameConfig(merged, remote)) {
+					newest = (await this.upload(await ensureDir(), CONFIG_FILE, JSON.stringify(merged))).id;
+					stale.push(...cfgFiles.map((f) => f.fid));
+				} else stale.push(...cfgFiles.slice(1).map((f) => f.fid));
+				const m = loadMeta();
+				rememberConfig(m, merged);
+				m.seen.config = newest;
+				m.synced.config = cfgRev;
+				saveMeta(m);
+			} else stale.push(...cfgFiles.slice(1).map((f) => f.fid));
+			this.cachePending = false;
+			const m0 = loadMeta();
+			const cacheRev = m0.rev.cache;
+			if (first || cacheRev !== m0.synced.cache || (cacheFiles[0]?.fid ?? "") !== m0.seen.cache) {
+				const remote = cacheFiles[0] ? parseCacheDoc(await this.read(cacheFiles[0])) : null;
+				const localEntries = Object.fromEntries(await this.deps.cache.entries());
+				const merged = mergeCache({
+					app: "115-cleaner",
+					kind: "ai-cache",
+					version: 1,
+					savedAt: now,
+					clearedAt: m0.cacheClearedAt,
+					entries: localEntries
+				}, remote, now);
+				for (const [k, e] of Object.entries(merged.entries)) if (!same(localEntries[k], e)) await this.deps.cache.put(k, e);
+				for (const k of Object.keys(localEntries)) if (!merged.entries[k]) await this.deps.cache.delete(k);
+				let newest = cacheFiles[0]?.fid ?? "";
+				const empty = !Object.keys(merged.entries).length && !merged.clearedAt;
+				if (!remote && !empty || remote && !sameCache(merged, remote)) {
+					newest = (await this.upload(await ensureDir(), CACHE_FILE, JSON.stringify(merged))).id;
+					stale.push(...cacheFiles.map((f) => f.fid));
+				} else stale.push(...cacheFiles.slice(1).map((f) => f.fid));
+				const m = loadMeta();
+				m.cacheClearedAt = Math.max(m.cacheClearedAt, merged.clearedAt);
+				m.seen.cache = newest;
+				m.synced.cache = cacheRev;
+				saveMeta(m);
+			} else stale.push(...cacheFiles.slice(1).map((f) => f.fid));
+			if (dir && stale.length) await deleteBatch(this.deps.http, dir, stale).catch(() => void 0);
+			const m = loadMeta();
+			m.lastSync = now;
+			saveMeta(m);
+			if (applied) window.dispatchEvent(new CustomEvent(SYNCED_EVENT));
+		}
+		async listFiles(dir) {
+			return ((await listPage(this.deps.http, listParams({
+				cid: dir,
+				limit: 1150
+			}))).data ?? []).filter((it) => it.fid && (it.n === "cex-sync.json" || it.n === "cex-ai-cache.json")).sort((a, b) => cmpId(String(b.fid), String(a.fid)));
+		}
+		async findDir(create) {
+			const cached = gmGet(KEYS.syncDirCid, "");
+			if (cached && await this.verifyDir(cached)) return cached;
+			let parent = "0";
+			for (const name of SYNC_DIR) {
+				let id = await this.findChild(parent, name);
+				if (!id) {
+					if (!create) return "";
+					id = await createFolder(this.deps.http, parent, name);
+				}
+				parent = id;
+			}
+			gmSetSilent(KEYS.syncDirCid, parent);
+			return parent;
+		}
+		async verifyDir(cid) {
+			try {
+				const path = pathFromCategory(cid, await getCategory(this.deps.http, cid));
+				return path.length === SYNC_DIR.length && path.every((p, i) => sameName(p.name, SYNC_DIR[i]));
+			} catch {
+				return false;
+			}
+		}
+		async findChild(parent, name) {
+			const hit = (await listAll(this.deps.http, listParams({
+				cid: parent,
+				nf: 1,
+				limit: 1150
+			}))).find((it) => !it.fid && sameName(it.n, name));
+			return hit ? String(hit.cid) : "";
+		}
+		read(f) {
+			if (!f.pc) throw new Error("云端同步文件缺少 pickcode");
+			return this.deps.read ? this.deps.read(f.pc) : readText(this.deps.http, f.pc);
+		}
+		upload(cid, name, text) {
+			if (!cid) throw new Error("无法创建云同步目录");
+			return this.deps.upload ? this.deps.upload(cid, name, text) : uploadText(cid, name, text);
+		}
+		locked(fn) {
+			const locks = this.deps.locks ?? (typeof navigator !== "undefined" ? navigator.locks : void 0);
+			return locks ? locks.request("cex-sync", fn) : fn();
+		}
+		now() {
+			return (this.deps.now ?? Date.now)();
+		}
+	};
+	function trackedCache(kv, sync) {
+		return {
+			...kv,
+			put: async (k, v) => {
+				await kv.put(k, v);
+				sync.markCacheChanged();
+			},
+			clear: async () => {
+				await kv.clear();
+				sync.markCacheCleared();
+			}
+		};
+	}
 	var SERVICES = Symbol("cex-services");
 	async function createServices() {
 		const http = createHttpClient();
 		const stores = await openStores();
+		const sync = new CloudSync({
+			http,
+			cache: stores.aiCache
+		});
+		stores.aiCache = trackedCache(stores.aiCache, sync);
 		const paths = new PathResolver(http, stores.pathCache);
 		const treePaths = new TreePathLoader(async (cid) => (await exportTreeText(http, cid, false)).text, paths);
 		return {
@@ -11541,7 +12397,8 @@
 			stores,
 			lock: createOpLock(),
 			paths,
-			treePaths
+			treePaths,
+			sync
 		};
 	}
 	function useServices() {
@@ -14461,34 +15318,6 @@
 	function keywordSearchTerms(rule) {
 		return rule.isRegexp ? regexSearchTerms(rule.pattern) : [rule.pattern];
 	}
-	var GroupType = function(GroupType) {
-		GroupType[GroupType["suffix"] = 0] = "suffix";
-		GroupType[GroupType["keyword"] = 1] = "keyword";
-		return GroupType;
-	}({});
-	var PatternType = function(PatternType) {
-		PatternType[PatternType["filter"] = 0] = "filter";
-		PatternType[PatternType["dirKeyword"] = 1] = "dirKeyword";
-		PatternType[PatternType["fileKeyword"] = 2] = "fileKeyword";
-		PatternType[PatternType["fileHash"] = 3] = "fileHash";
-		return PatternType;
-	}({});
-	var PATTERN_TYPE_LABEL = {
-		[0]: "筛选",
-		[1]: "目录名关键词",
-		[2]: "文件名关键词",
-		[3]: "文件sha1"
-	};
-	var KEYWORD_CATEGORY_LABEL = {
-		all: "全部",
-		file: "文件",
-		dir: "目录"
-	};
-	var RESULT_FILTER_LABEL = {
-		all: "全部",
-		matched: "有匹配",
-		unmatched: "无匹配"
-	};
 	var isUserFileFrame = (href = location.href) => href.includes("ac=userfile");
 	function topWin() {
 		const w = pageWindow();
@@ -14590,12 +15419,12 @@
 		gmSet(KEYS.recentDirs, list);
 		return list;
 	}
-	var _hoisted_1$20 = { class: "cex-dir-switcher" };
-	var _hoisted_2$20 = {
+	var _hoisted_1$23 = { class: "cex-dir-switcher" };
+	var _hoisted_2$23 = {
 		key: 0,
 		style: { "margin-top": "8px" }
 	};
-	var _hoisted_3$13 = ["onClick"];
+	var _hoisted_3$15 = ["onClick"];
 	var DirSwitcher_default = defineComponent({
 		__name: "DirSwitcher",
 		props: { purpose: { default: "清理" } },
@@ -14639,18 +15468,18 @@
 					distance: 5,
 					onShow
 				}, {
-					popper: withCtx(() => [createBaseVNode("div", _hoisted_1$20, [
+					popper: withCtx(() => [createBaseVNode("div", _hoisted_1$23, [
 						createBaseVNode("button", {
 							type: "button",
 							class: "pure-button pure-button-primary button-small",
 							onClick: pick
 						}, "打开 115 目录选择框…"),
-						recent.value.length ? (openBlock(), createElementBlock("div", _hoisted_2$20, [_cache[2] || (_cache[2] = createBaseVNode("div", { class: "cex-text-info" }, "最近清理过的目录", -1)), (openBlock(true), createElementBlock(Fragment, null, renderList(recent.value, (d) => {
+						recent.value.length ? (openBlock(), createElementBlock("div", _hoisted_2$23, [_cache[2] || (_cache[2] = createBaseVNode("div", { class: "cex-text-info" }, "最近清理过的目录", -1)), (openBlock(true), createElementBlock(Fragment, null, renderList(recent.value, (d) => {
 							return openBlock(), createElementBlock("a", {
 								key: d.cid,
 								href: "javascript:void(0)",
 								onClick: ($event) => choose(d.cid)
-							}, toDisplayString(d.path || d.cid), 9, _hoisted_3$13);
+							}, toDisplayString(d.path || d.cid), 9, _hoisted_3$15);
 						}), 128))])) : createCommentVNode("", true),
 						createBaseVNode("form", {
 							class: "pure-form",
@@ -14750,13 +15579,63 @@
 			};
 		}
 	});
-	var _hoisted_1$19 = { class: "cex-path cex-label plain" };
-	var _hoisted_2$19 = [
+	var defaultNotifyConfig = () => ({
+		sendKey: "",
+		ai: false,
+		query: false,
+		empty: false
+	});
+	var loadNotifyConfig = () => ({
+		...defaultNotifyConfig(),
+		...gmGet(KEYS.notifyConfig, {})
+	});
+	var notifyUi = reactive(loadNotifyConfig());
+	var refreshNotifyUi = () => void Object.assign(notifyUi, loadNotifyConfig());
+	function saveNotifyConfig(patch) {
+		const next = {
+			...loadNotifyConfig(),
+			...patch
+		};
+		gmSet(KEYS.notifyConfig, next);
+		Object.assign(notifyUi, next);
+		return next;
+	}
+	function wantNotify(kind) {
+		const c = loadNotifyConfig();
+		return !!c.sendKey.trim() && c[kind];
+	}
+	var _hoisted_1$22 = ["title"];
+	var _hoisted_2$22 = ["disabled"];
+	var NotifyToggle_default = defineComponent({
+		__name: "NotifyToggle",
+		props: { kind: {} },
+		setup(__props) {
+			const props = __props;
+			const hasKey = computed(() => !!notifyUi.sendKey.trim());
+			const checked = computed({
+				get: () => hasKey.value && notifyUi[props.kind],
+				set: (v) => void saveNotifyConfig({ [props.kind]: v })
+			});
+			onMounted(refreshNotifyUi);
+			return (_ctx, _cache) => {
+				return openBlock(), createElementBlock("label", {
+					class: normalizeClass(["cex-small cex-notify-toggle", { "cex-text-info": !hasKey.value }]),
+					title: hasKey.value ? "跑完后用 Server酱推送到手机（会记住这次的选择）" : "请先在 设置 → 通知 里填写 Server酱 SendKey"
+				}, [withDirectives(createBaseVNode("input", {
+					"onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => checked.value = $event),
+					type: "checkbox",
+					disabled: !hasKey.value
+				}, null, 8, _hoisted_2$22), [[vModelCheckbox, checked.value]]), _cache[1] || (_cache[1] = createTextVNode(" 📱通知 ", -1))], 10, _hoisted_1$22);
+			};
+		}
+	});
+	var _hoisted_1$21 = { class: "cex-path cex-label plain" };
+	var _hoisted_2$21 = [
 		"data-cid",
 		"title",
 		"onClick"
 	];
-	var _hoisted_3$12 = { key: 0 };
+	var _hoisted_3$14 = { key: 0 };
 	var _hoisted_4$12 = ["href"];
 	var PathBar_default = defineComponent({
 		__name: "PathBar",
@@ -14770,7 +15649,7 @@
 			const emit = __emit;
 			const last = computed(() => props.path[props.path.length - 1]);
 			return (_ctx, _cache) => {
-				return openBlock(), createElementBlock("div", _hoisted_1$19, [__props.loading ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [createTextVNode("正在获取目录信息...")], 64)) : __props.path.length ? (openBlock(), createElementBlock(Fragment, { key: 1 }, [
+				return openBlock(), createElementBlock("div", _hoisted_1$21, [__props.loading ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [createTextVNode("正在获取目录信息...")], 64)) : __props.path.length ? (openBlock(), createElementBlock(Fragment, { key: 1 }, [
 					_cache[0] || (_cache[0] = createTextVNode(" 📁 ", -1)),
 					(openBlock(true), createElementBlock(Fragment, null, renderList(__props.path, (p, i) => {
 						return openBlock(), createElementBlock(Fragment, { key: p.id }, [createBaseVNode("a", {
@@ -14778,7 +15657,7 @@
 							"data-cid": p.id,
 							title: `切换到「${p.name}」`,
 							onClick: ($event) => emit("select", p.id)
-						}, toDisplayString(p.name), 9, _hoisted_2$19), i < __props.path.length - 1 ? (openBlock(), createElementBlock("span", _hoisted_3$12, " / ")) : createCommentVNode("", true)], 64);
+						}, toDisplayString(p.name), 9, _hoisted_2$21), i < __props.path.length - 1 ? (openBlock(), createElementBlock("span", _hoisted_3$14, " / ")) : createCommentVNode("", true)], 64);
 					}), 128)),
 					last.value ? (openBlock(), createElementBlock("a", {
 						key: 0,
@@ -15070,107 +15949,6 @@
 		if (s.size > cfg.maxSizeMB * 1024 * 1024) return "high";
 		if (s.files > cfg.maxFiles) return "high";
 	}
-	var refKey = (r) => `${r.groupType}|${r.groupId}|${r.ruleValue}`;
-	var describeRef = (r) => `${r.groupType === GroupType.suffix ? "后缀" : "关键词"}:${r.ruleValue}`;
-	function candidateFromItem(it) {
-		const isDir = !it.fid;
-		const sz = parseFloat(String(it.s));
-		return {
-			id: it.fid || it.cid,
-			isDir,
-			name: it.n,
-			size: isDir || !Number.isFinite(sz) ? 0 : sz,
-			sha1: it.sha || void 0,
-			parentId: String((isDir ? it.pid : it.cid) ?? ""),
-			parentName: it.dp || void 0,
-			hits: [],
-			selected: true
-		};
-	}
-	var CandidatePool = class {
-		wrap;
-		map = new Map();
-		constructor(wrap = (o) => o) {
-			this.wrap = wrap;
-		}
-		upsert(it, ref) {
-			const id = it.fid || it.cid;
-			let c = this.map.get(id);
-			if (!c) {
-				c = this.wrap(candidateFromItem(it));
-				this.map.set(id, c);
-			}
-			const k = refKey(ref);
-			if (!c.hits.some((h) => refKey(h) === k)) c.hits.push(ref);
-			return c;
-		}
-		get(id) {
-			return this.map.get(id);
-		}
-		values() {
-			return [...this.map.values()];
-		}
-		byRef(ref) {
-			const k = refKey(ref);
-			return this.values().filter((c) => c.hits.some((h) => refKey(h) === k));
-		}
-		byRefs(refs) {
-			const keys = new Set(refs.map(refKey));
-			return this.values().filter((c) => c.hits.some((h) => keys.has(refKey(h))));
-		}
-		removeRef(ref) {
-			const k = refKey(ref);
-			for (const [id, c] of this.map) {
-				c.hits = c.hits.filter((h) => refKey(h) !== k);
-				if (c.excludedBy && refKey(c.excludedBy.ref) === k) c.excludedBy = void 0;
-				if (!c.hits.length) this.map.delete(id);
-			}
-		}
-		clear() {
-			this.map.clear();
-		}
-		get size() {
-			return this.map.size;
-		}
-	};
-	function createSession(cid, path, opts = {}) {
-		return {
-			cid,
-			path,
-			startedAt: opts.now ?? Date.now(),
-			queriedAt: null,
-			pool: new CandidatePool(opts.wrap),
-			fullList: null,
-			dirList: null,
-			items: new Map()
-		};
-	}
-	function pathFromCategory(cid, info) {
-		return [...info.paths.slice(1).map((p) => ({
-			id: String(p.file_id),
-			name: p.file_name
-		})), {
-			id: cid,
-			name: info.file_name
-		}];
-	}
-	var pathText = (path) => path.map((p) => p.name).join(" / ");
-	var rootPathString = (s) => "/" + s.path.map((p) => p.name).join("/");
-	function markQueried(s, now = Date.now()) {
-		if (s.queriedAt === null) s.queriedAt = now;
-	}
-	function rememberItems(s, items) {
-		for (const it of items) {
-			const id = it.fid || it.cid;
-			if (id && !s.items.has(id)) s.items.set(id, it);
-		}
-	}
-	function staleReason(s, activeCid, now = Date.now()) {
-		if (s.cid !== activeCid) return "目录已切换，请重新查询";
-		if (s.queriedAt === null) return "尚未查询，请先查询";
-		if (now - s.queriedAt > 18e5) return "查询已超过 30 分钟，请重新查询";
-		return null;
-	}
 	function splitLines(text) {
 		const list = typeof text === "string" ? text.split(/[\r\n]+/) : text;
 		const seen = new Set();
@@ -15436,6 +16214,135 @@
 			...c
 		});
 	}
+	var PREFIX = "115清理";
+	function verdictCounts(cands) {
+		const n = {
+			delete: 0,
+			keep: 0,
+			unsure: 0,
+			none: 0
+		};
+		for (const c of cands) {
+			if (c.excludedBy || c.result === "deleted" || c.result === "restored") continue;
+			if (!c.ai) n.none++;
+			else n[c.ai.verdict]++;
+		}
+		return n;
+	}
+	function reviewMessage(scopeTitle, dir, cands, o) {
+		const n = verdictCounts(cands);
+		const sel = cands.filter((c) => c.selected && !c.excludedBy && !c.result);
+		const risk = sel.filter((c) => c.risk === "high").length;
+		const lines = [`目录: ${dir || "（未知）"}`, `范围: ${scopeTitle}`];
+		if (o.progress) lines.push(`复核: ${o.progress.done}/${o.progress.total} 条，出错 ${o.progress.errors}${o.cached ? `，缓存命中 ${o.cached}` : ""}`);
+		else if (o.cached) lines.push(`复核: 全部 ${o.cached} 条命中缓存`);
+		lines.push(`结论: 删 ${n.delete} · 留 ${n.keep} · 疑 ${n.unsure}${n.none ? ` · 未审 ${n.none}` : ""}`);
+		let title;
+		switch (o.next.type) {
+			case "manual":
+				title = `${PREFIX}：AI 复核完成，待确认删除`;
+				lines.push(`已勾选: ${sel.length} 项（${formatSize(sel.reduce((a, c) => a + c.size, 0))}）${risk ? `，其中高风险 ${risk} 项` : ""}`);
+				lines.push("下一步: 回到审核台确认后点「删除已勾选」");
+				break;
+			case "queryOnly":
+				title = `${PREFIX}：AI 复核完成（只查询分组）`;
+				lines.push("下一步: 该分组只可查询，回来查看结论");
+				break;
+			case "autoSkipped":
+				title = `${PREFIX}：AI 复核完成，自动删除未执行`;
+				lines.push(`原因: ${o.next.reason}`);
+				lines.push(`已勾选: ${sel.length} 项，回到审核台手动确认`);
+				break;
+			case "autoDeleted":
+				title = o.next.failed ? `${PREFIX}：自动删除完成（有失败）` : `${PREFIX}：自动删除完成`;
+				lines.push(`删除: 成功 ${o.next.ok} 项（${formatSize(o.next.size)}），失败 ${o.next.failed} 项`);
+				lines.push("恢复: 可在回执里一键恢复");
+		}
+		return {
+			title,
+			lines
+		};
+	}
+	function errorMessage(stage, dir, scopeTitle, err) {
+		return {
+			title: `${PREFIX}：${stage}出错，已停止`,
+			lines: [
+				`目录: ${dir || "（未知）"}`,
+				`范围: ${scopeTitle}`,
+				`错误: ${err instanceof Error ? err.message : String(err)}`
+			]
+		};
+	}
+	function emptyReviewMessage(scopeTitle, dir, failedRules) {
+		return {
+			title: `${PREFIX}：没有需要 AI 复核的文件`,
+			lines: [
+				`目录: ${dir || "（未知）"}`,
+				`范围: ${scopeTitle}`,
+				...failedRules ? [`查询失败: ${failedRules} 条规则，回来看看`] : []
+			]
+		};
+	}
+	function queryMessage(panel, dir, rows, next) {
+		const done = rows.filter((r) => r.state.num >= 0);
+		const failed = rows.filter((r) => r.state.phase === "queryFailed");
+		const hits = done.reduce((a, r) => a + r.state.num, 0);
+		const size = done.reduce((a, r) => a + Math.max(0, r.state.size), 0);
+		const lines = [`目录: ${dir || "（未知）"}`, `规则: ${rows.length} 条，命中 ${hits} 项（${formatSize(size)}）`];
+		if (failed.length) lines.push(`查询失败: ${failed.length} 条（${failed.slice(0, 3).map((r) => r.ref.ruleValue).join("、")}${failed.length > 3 ? " 等" : ""}）`);
+		if (next === "confirm") lines.push(hits ? "下一步: 回来确认删除" : "下一步: 没有可删除的项");
+		return {
+			title: `${PREFIX}：${panel}查询完成${next === "confirm" && hits ? "，待确认删除" : ""}`,
+			lines
+		};
+	}
+	function emptyDirMessage(dir, found, err) {
+		if (err) return {
+			title: `${PREFIX}：空目录检测失败`,
+			lines: [`目录: ${dir || "（未知）"}`, `错误: ${err instanceof Error ? err.message : String(err)}`]
+		};
+		return {
+			title: `${PREFIX}：空目录检测完成，找到 ${found} 个`,
+			lines: [`目录: ${dir || "（未知）"}`, found ? "下一步: 回来勾选后删除" : "下一步: 没有空目录"]
+		};
+	}
+	function serverChanUrl(sendKey) {
+		const key = sendKey.trim();
+		const m = key.match(/^sctp(\d+)t/i);
+		return m ? `https://${m[1]}.push.ft07.com/send/${key}.send` : `https://sctapi.ftqq.com/${key}.send`;
+	}
+	var toMarkdownList = (lines) => lines.map((l) => `- ${l}`).join("\n");
+	async function sendServerChan(sendKey, title, lines, transport = gmFetch) {
+		if (!sendKey.trim()) throw new Error("未填写 Server酱 SendKey");
+		const body = new URLSearchParams({
+			title: title.slice(0, 100),
+			desp: toMarkdownList(lines),
+			tags: "115清理"
+		});
+		const r = await transport({
+			method: "POST",
+			url: serverChanUrl(sendKey),
+			headers: { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8" },
+			data: body.toString(),
+			timeoutMs: 15e3
+		});
+		let res = {};
+		try {
+			res = JSON.parse(r.text);
+		} catch {}
+		if (r.status !== 200 || res.code !== void 0 && res.code !== 0) throw new Error(`Server酱推送失败：${res.message ?? `HTTP ${r.status}`}`);
+	}
+	async function notifyUser(title, lines) {
+		const { sendKey } = loadNotifyConfig();
+		if (!sendKey.trim()) return false;
+		try {
+			await sendServerChan(sendKey, title, lines);
+			return true;
+		} catch (e) {
+			console.warn("[cex] 通知发送失败", e);
+			return false;
+		}
+	}
 	var CLEANER = Symbol("cex-cleaner");
 	function useCleanerCtx() {
 		const c = inject(CLEANER);
@@ -15549,6 +16456,7 @@
 			}
 		}
 		async function aiAll(kinds) {
+			const notify = wantNotify("ai");
 			busy.value = true;
 			try {
 				for (const kind of kinds) for (const row of visibleRows(kind)) if (row.state.phase === "idle" || row.state.phase === "queryFailed") await queryRow(kind, row);
@@ -15561,7 +16469,9 @@
 				kinds,
 				refs: kinds.flatMap((k) => visibleRows(k).map((r) => r.ref)),
 				intent: "ai",
-				queryOnly: kinds.some((k) => !!groups[k].value?.queryOnly)
+				queryOnly: kinds.some((k) => !!groups[k].value?.queryOnly),
+				notify,
+				failedRules: kinds.reduce((a, k) => a + visibleRows(k).filter((r) => r.state.phase === "queryFailed").length, 0)
 			};
 		}
 		const candidatesOf = (refs) => session.value ? session.value.pool.byRefs(refs) : [];
@@ -15600,6 +16510,10 @@
 			bump,
 			openReview: (scope) => {
 				review.value = scope;
+			},
+			notifyQuery: (kind, next) => {
+				const m = queryMessage(kind === "suffix" ? "后缀" : "关键词", pathText(session.value?.path ?? []), visibleRows(kind), next);
+				notifyUser(m.title, m.lines);
 			},
 			closeReview: () => {
 				review.value = null;
@@ -15884,12 +16798,12 @@
 		}
 		return n;
 	}
-	var _hoisted_1$18 = { class: "cex-bar" };
-	var _hoisted_2$18 = {
+	var _hoisted_1$20 = { class: "cex-bar" };
+	var _hoisted_2$20 = {
 		key: 0,
 		class: "cex-label danger"
 	};
-	var _hoisted_3$11 = {
+	var _hoisted_3$13 = {
 		key: 0,
 		class: "cex-text-info"
 	};
@@ -15968,16 +16882,16 @@
 				downloadText(toCsv(receiptRows(r)), `回执-${r.id}.csv`, "text/csv;charset=utf-8");
 			}
 			return (_ctx, _cache) => {
-				return openBlock(), createElementBlock("div", { class: normalizeClass(["cex-panel", { "is-busy": busy.value }]) }, [createBaseVNode("div", _hoisted_1$18, [
+				return openBlock(), createElementBlock("div", { class: normalizeClass(["cex-panel", { "is-busy": busy.value }]) }, [createBaseVNode("div", _hoisted_1$20, [
 					_cache[6] || (_cache[6] = createBaseVNode("span", { class: "cex-title" }, "删除回执", -1)),
-					!unref(svc).stores.persistent ? (openBlock(), createElementBlock("span", _hoisted_2$18, "IndexedDB 不可用，回执只保存在当前页面")) : createCommentVNode("", true),
+					!unref(svc).stores.persistent ? (openBlock(), createElementBlock("span", _hoisted_2$20, "IndexedDB 不可用，回执只保存在当前页面")) : createCommentVNode("", true),
 					createBaseVNode("button", {
 						type: "button",
 						class: "pure-button button-error",
 						style: { "margin-left": "auto" },
 						onClick: _cache[0] || (_cache[0] = ($event) => emit("close"))
 					}, "关闭")
-				]), !current.value ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [!list.value.length ? (openBlock(), createElementBlock("p", _hoisted_3$11, "还没有回执。")) : (openBlock(), createElementBlock("table", _hoisted_4$11, [_cache[7] || (_cache[7] = createBaseVNode("thead", null, [createBaseVNode("tr", null, [
+				]), !current.value ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [!list.value.length ? (openBlock(), createElementBlock("p", _hoisted_3$13, "还没有回执。")) : (openBlock(), createElementBlock("table", _hoisted_4$11, [_cache[7] || (_cache[7] = createBaseVNode("thead", null, [createBaseVNode("tr", null, [
 					createBaseVNode("th", null, "时间"),
 					createBaseVNode("th", null, "目录"),
 					createBaseVNode("th", null, "删除 / 失败 / 已恢复"),
@@ -16053,8 +16967,8 @@
 			};
 		}
 	});
-	var _hoisted_1$17 = { class: "cex-btn-group" };
-	var _hoisted_2$17 = ["onClick"];
+	var _hoisted_1$19 = { class: "cex-btn-group" };
+	var _hoisted_2$19 = ["onClick"];
 	var ButtonGroup_default = defineComponent({
 		__name: "ButtonGroup",
 		props: {
@@ -16065,19 +16979,19 @@
 		setup(__props, { emit: __emit }) {
 			const emit = __emit;
 			return (_ctx, _cache) => {
-				return openBlock(), createElementBlock("span", _hoisted_1$17, [(openBlock(true), createElementBlock(Fragment, null, renderList(__props.mapping, (label, value) => {
+				return openBlock(), createElementBlock("span", _hoisted_1$19, [(openBlock(true), createElementBlock(Fragment, null, renderList(__props.mapping, (label, value) => {
 					return openBlock(), createElementBlock("button", {
 						key: value,
 						type: "button",
 						class: normalizeClass(["pure-button", { "pure-button-primary": __props.modelValue === value }]),
 						onClick: ($event) => emit("update:modelValue", String(value))
-					}, toDisplayString(label), 11, _hoisted_2$17);
+					}, toDisplayString(label), 11, _hoisted_2$19);
 				}), 128))]);
 			};
 		}
 	});
-	var _hoisted_1$16 = { class: "cex-pager" };
-	var _hoisted_2$16 = { class: "cex-small" };
+	var _hoisted_1$18 = { class: "cex-pager" };
+	var _hoisted_2$18 = { class: "cex-small" };
 	var Pager_default = defineComponent({
 		__name: "Pager",
 		props: {
@@ -16095,7 +17009,7 @@
 				if (next !== props.modelValue) emit("update:modelValue", next);
 			}
 			return (_ctx, _cache) => {
-				return openBlock(), createElementBlock("span", _hoisted_1$16, [
+				return openBlock(), createElementBlock("span", _hoisted_1$18, [
 					createBaseVNode("button", {
 						type: "button",
 						class: "pure-button button-xsmall",
@@ -16108,7 +17022,7 @@
 						"data-act": "prev",
 						onClick: _cache[1] || (_cache[1] = ($event) => go(__props.modelValue - 1))
 					}, "‹"),
-					createBaseVNode("span", _hoisted_2$16, toDisplayString(__props.modelValue) + " / " + toDisplayString(pages.value) + " （共 " + toDisplayString(__props.total) + " 条） ", 1),
+					createBaseVNode("span", _hoisted_2$18, toDisplayString(__props.modelValue) + " / " + toDisplayString(pages.value) + " （共 " + toDisplayString(__props.total) + " 条） ", 1),
 					createBaseVNode("button", {
 						type: "button",
 						class: "pure-button button-xsmall",
@@ -16710,9 +17624,9 @@
 		const risk = targets.filter((c) => c.risk === "high").length;
 		return `确认删除已勾选的 <b>${targets.length} 项</b>（${formatSize(size)}）？<br>文件会进入 115 回收站，可在回执中恢复。` + (risk ? `<br><b class="cex-text-danger">其中 ${risk} 项是高风险目录，请再次确认！</b>` : "");
 	}
-	var _hoisted_1$15 = { class: "cex-bar" };
-	var _hoisted_2$15 = { class: "cex-label primary" };
-	var _hoisted_3$10 = { class: "cex-bar" };
+	var _hoisted_1$17 = { class: "cex-bar" };
+	var _hoisted_2$17 = { class: "cex-label primary" };
+	var _hoisted_3$12 = { class: "cex-bar" };
 	var _hoisted_4$10 = ["value"];
 	var _hoisted_5$9 = { class: "cex-bar" };
 	var _hoisted_6$8 = { class: "cex-progress" };
@@ -16821,25 +17735,35 @@
 				const keys = new Set(props.scope.refs.map(refKey));
 				for (const kind of props.scope.kinds) for (const row of cleaner.rows[kind].value) if (keys.has(row.key) && row.state.num > 0) row.state.phase = phase;
 			}
-			async function startReview() {
+			const dirText = () => pathText(cleaner.session.value?.path ?? []);
+			const push = (m) => notifyUser(m.title, m.lines);
+			async function startReview(fromEntry = false) {
+				const notify = fromEntry ? !!props.scope.notify : wantNotify("ai");
 				const cfg = loadAiConfig();
 				const provider = createProvider(cfg);
 				if (!provider) {
 					toast("请先在设置中配置 AI", "warning");
+					if (notify) push(errorMessage("AI 复核", dirText(), props.scope.title, new Error("AI 未配置")));
 					return;
 				}
 				const targets = cands.value.filter((c) => isSelectable(c) && !c.ai);
 				if (!targets.length) {
 					toast("没有需要复核的项", "info");
+					if (notify) push(emptyReviewMessage(props.scope.title, dirText(), props.scope.failedRules ?? 0));
 					return;
 				}
 				const plan = await planReview(targets, svc.stores.aiCache, cfg.batchSize);
 				cleaner.bump();
+				let finished;
+				let failed = false;
+				let cancelled = false;
 				if (plan.pending.length) {
-					if (!await confirmBox(`共 ${plan.total} 条，缓存命中 ${plan.cached} 条，需发送 ${plan.pending.length} 条，约 ${plan.requests} 次请求。<br>开始 AI 复核？`, {
-						confirmText: "开始复核",
-						icon: "question"
-					})) return;
+					if (!notify) {
+						if (!await confirmBox(`共 ${plan.total} 条，缓存命中 ${plan.cached} 条，需发送 ${plan.pending.length} 条，约 ${plan.requests} 次请求。<br>开始 AI 复核？`, {
+							confirmText: "开始复核",
+							icon: "question"
+						})) return;
+					}
 					reviewing.value = true;
 					abort = new AbortController();
 					markRows("reviewing");
@@ -16849,7 +17773,7 @@
 							total: plan.pending.length,
 							errors: 0
 						};
-						progress.value = await runReview(plan, {
+						finished = progress.value = await runReview(plan, {
 							provider,
 							cache: svc.stores.aiCache,
 							context: contextBuilder(svc, cleaner.session.value),
@@ -16860,24 +17784,46 @@
 							cleaner.bump();
 						}, abort.signal);
 					} catch (e) {
-						await alertError(e instanceof AiAuthError ? "AI 鉴权失败，复核已停止" : "AI 复核出错", e);
+						failed = true;
+						const auth = e instanceof AiAuthError;
+						if (notify) await push(errorMessage(auth ? "AI 鉴权" : "AI 复核", dirText(), props.scope.title, e));
+						await alertError(auth ? "AI 鉴权失败，复核已停止" : "AI 复核出错", e);
 					} finally {
+						cancelled = !!abort?.signal.aborted;
 						reviewing.value = false;
 						abort = null;
 						cleaner.refreshRows();
 						cleaner.bump();
 					}
 				} else toast(`全部 ${plan.cached} 条命中缓存`, "info");
-				await afterReview();
+				await afterReview(notify && !failed && !cancelled, {
+					progress: finished,
+					cached: plan.cached
+				});
 			}
 			function cancelReview() {
 				abort?.abort();
 			}
-			async function afterReview() {
+			async function afterReview(notify, stat) {
 				const cfg = loadAiConfig();
-				if (props.scope.intent !== "ai" || cfg.mode !== "auto" || props.scope.queryOnly) return;
+				const msg = (next) => reviewMessage(props.scope.title, dirText(), cands.value, {
+					...stat,
+					next
+				});
+				if (props.scope.queryOnly) {
+					if (notify) await push(msg({ type: "queryOnly" }));
+					return;
+				}
+				if (props.scope.intent !== "ai" || cfg.mode !== "auto") {
+					if (notify) await push(msg({ type: "manual" }));
+					return;
+				}
 				const d = autoDeleteDecision(cands.value, cfg.autoThreshold);
 				if (d.action === "manual") {
+					if (notify) await push(msg({
+						type: "autoSkipped",
+						reason: d.reason
+					}));
 					await swal.fire({
 						icon: "info",
 						title: "自动删除未执行",
@@ -16885,16 +17831,25 @@
 					});
 					return;
 				}
-				await runDelete(d.targets, "auto", true);
+				await runDelete(d.targets, "auto", true, notify ? {
+					onDone: (r) => {
+						const ok = r.items.filter((i) => i.result === "deleted");
+						const size = ok.reduce((a, i) => a + (i.size || 0), 0);
+						return push(msg({
+							type: "autoDeleted",
+							ok: ok.length,
+							failed: r.items.length - ok.length,
+							size
+						}));
+					},
+					onError: (e) => push(errorMessage("自动删除", dirText(), props.scope.title, e))
+				} : void 0);
 			}
 			const guard = (e) => {
 				e.preventDefault();
 				e.returnValue = "";
 			};
-			const onVisibility = () => {
-				if (document.hidden && deleting.value) toast("删除进行中，请保持页面在前台", "warning", 3e3);
-			};
-			async function runDelete(list, trigger, skipConfirm = false) {
+			async function runDelete(list, trigger, skipConfirm = false, hooks) {
 				if (props.scope.queryOnly) {
 					toast("当前分组只可用于查询", "warning");
 					return;
@@ -16911,7 +17866,6 @@
 				deleting.value = true;
 				markRows("deleting");
 				window.addEventListener("beforeunload", guard);
-				document.addEventListener("visibilitychange", onVisibility);
 				try {
 					const model = targets.some((c) => c.ai?.source === "ai") ? loadAiConfig().model : void 0;
 					const r = await executeDelete(s, targets, trigger, {
@@ -16923,17 +17877,18 @@
 					receipt.value = r;
 					loadPaths(targets).then(() => backfillReceiptPaths(r, targets, svc.stores.receipts));
 					const ok = r.items.filter((i) => i.result === "deleted").length;
+					await hooks?.onDone?.(r);
 					await swal.fire({
 						icon: ok === r.items.length ? "success" : "warning",
 						title: trigger === "auto" ? "自动删除完成" : "删除完成",
 						html: `成功 ${ok} 项，失败 ${r.items.length - ok} 项`
 					});
 				} catch (e) {
+					await hooks?.onError?.(e);
 					await alertError("删除失败", e);
 				} finally {
 					deleting.value = false;
 					window.removeEventListener("beforeunload", guard);
-					document.removeEventListener("visibilitychange", onVisibility);
 					cleaner.refreshRows();
 					cleaner.bump();
 				}
@@ -16970,19 +17925,18 @@
 			}
 			onMounted(async () => {
 				await nextTick();
-				if (props.scope.intent === "ai") await startReview();
+				if (props.scope.intent === "ai") await startReview(true);
 				else if (props.scope.intent === "clean") await runDelete(cands.value, "manual");
 			});
 			onBeforeUnmount(() => {
 				abort?.abort();
 				window.removeEventListener("beforeunload", guard);
-				document.removeEventListener("visibilitychange", onVisibility);
 			});
 			return (_ctx, _cache) => {
 				return openBlock(), createElementBlock("div", { class: normalizeClass(["cex-panel", { "is-busy": deleting.value }]) }, [
-					createBaseVNode("div", _hoisted_1$15, [
-						_cache[17] || (_cache[17] = createBaseVNode("span", { class: "cex-title" }, "审核台", -1)),
-						createBaseVNode("span", _hoisted_2$15, toDisplayString(__props.scope.title), 1),
+					createBaseVNode("div", _hoisted_1$17, [
+						_cache[18] || (_cache[18] = createBaseVNode("span", { class: "cex-title" }, "审核台", -1)),
+						createBaseVNode("span", _hoisted_2$17, toDisplayString(__props.scope.title), 1),
 						createBaseVNode("span", null, [
 							createTextVNode("命中 " + toDisplayString(stats.value.total) + " · 已排除 " + toDisplayString(stats.value.excluded) + " · 高风险 " + toDisplayString(stats.value.risk) + " · 未审 " + toDisplayString(stats.value.unreviewed) + " · 已勾选 ", 1),
 							createBaseVNode("b", null, toDisplayString(stats.value.selected), 1),
@@ -16995,14 +17949,14 @@
 							onClick: close
 						}, "关闭")
 					]),
-					createBaseVNode("div", _hoisted_3$10, [
-						_cache[20] || (_cache[20] = createBaseVNode("span", { class: "cex-label" }, "AI", -1)),
+					createBaseVNode("div", _hoisted_3$12, [
+						_cache[21] || (_cache[21] = createBaseVNode("span", { class: "cex-label" }, "AI", -1)),
 						createVNode(ButtonGroup_default, {
 							"model-value": filter.ai,
 							mapping: AI_FILTER,
 							"onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => filter.ai = v)
 						}, null, 8, ["model-value"]),
-						_cache[21] || (_cache[21] = createBaseVNode("span", { class: "cex-label" }, "类型", -1)),
+						_cache[22] || (_cache[22] = createBaseVNode("span", { class: "cex-label" }, "类型", -1)),
 						createVNode(ButtonGroup_default, {
 							"model-value": filter.kind,
 							mapping: KIND_FILTER,
@@ -17011,8 +17965,8 @@
 						createBaseVNode("label", null, [withDirectives(createBaseVNode("input", {
 							"onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => filter.riskOnly = $event),
 							type: "checkbox"
-						}, null, 512), [[vModelCheckbox, filter.riskOnly]]), _cache[18] || (_cache[18] = createTextVNode(" 只看高风险", -1))]),
-						withDirectives(createBaseVNode("select", { "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => filter.ref = $event) }, [_cache[19] || (_cache[19] = createBaseVNode("option", { value: "" }, "全部规则", -1)), (openBlock(true), createElementBlock(Fragment, null, renderList(ruleOptions.value, (o) => {
+						}, null, 512), [[vModelCheckbox, filter.riskOnly]]), _cache[19] || (_cache[19] = createTextVNode(" 只看高风险", -1))]),
+						withDirectives(createBaseVNode("select", { "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => filter.ref = $event) }, [_cache[20] || (_cache[20] = createBaseVNode("option", { value: "" }, "全部规则", -1)), (openBlock(true), createElementBlock(Fragment, null, renderList(ruleOptions.value, (o) => {
 							return openBlock(), createElementBlock("option", {
 								key: o.key,
 								value: o.key
@@ -17049,8 +18003,12 @@
 							key: 0,
 							type: "button",
 							class: "pure-button button-secondary",
-							onClick: startReview
-						}, "🤖 AI复核 未审 " + toDisplayString(stats.value.unreviewed), 1)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
+							onClick: _cache[9] || (_cache[9] = ($event) => startReview())
+						}, "🤖 AI复核 未审 " + toDisplayString(stats.value.unreviewed), 1)) : createCommentVNode("", true),
+						!reviewing.value ? (openBlock(), createBlock(NotifyToggle_default, {
+							key: 1,
+							kind: "ai"
+						})) : (openBlock(), createElementBlock(Fragment, { key: 2 }, [
 							createBaseVNode("span", _hoisted_6$8, [createBaseVNode("i", { style: normalizeStyle({ width: `${progress.value ? progress.value.done / Math.max(1, progress.value.total) * 100 : 0}%` }) }, null, 4)]),
 							createBaseVNode("span", _hoisted_7$8, toDisplayString(progress.value?.done ?? 0) + " / " + toDisplayString(progress.value?.total ?? 0) + "，错误 " + toDisplayString(progress.value?.errors ?? 0), 1),
 							createBaseVNode("button", {
@@ -17059,8 +18017,8 @@
 								onClick: cancelReview
 							}, "取消")
 						], 64)),
-						withDirectives(createBaseVNode("select", { "onUpdate:modelValue": _cache[9] || (_cache[9] = ($event) => exportFormat.value = $event) }, [..._cache[22] || (_cache[22] = [createBaseVNode("option", { value: "csv" }, "CSV", -1), createBaseVNode("option", { value: "json" }, "JSON", -1)])], 512), [[vModelSelect, exportFormat.value]]),
-						withDirectives(createBaseVNode("select", { "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => exportRange.value = $event) }, [..._cache[23] || (_cache[23] = [createBaseVNode("option", { value: "filtered" }, "当前筛选", -1), createBaseVNode("option", { value: "all" }, "全部", -1)])], 512), [[vModelSelect, exportRange.value]]),
+						withDirectives(createBaseVNode("select", { "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => exportFormat.value = $event) }, [..._cache[23] || (_cache[23] = [createBaseVNode("option", { value: "csv" }, "CSV", -1), createBaseVNode("option", { value: "json" }, "JSON", -1)])], 512), [[vModelSelect, exportFormat.value]]),
+						withDirectives(createBaseVNode("select", { "onUpdate:modelValue": _cache[11] || (_cache[11] = ($event) => exportRange.value = $event) }, [..._cache[24] || (_cache[24] = [createBaseVNode("option", { value: "filtered" }, "当前筛选", -1), createBaseVNode("option", { value: "all" }, "全部", -1)])], 512), [[vModelSelect, exportRange.value]]),
 						createBaseVNode("button", {
 							type: "button",
 							class: "pure-button button-small",
@@ -17075,26 +18033,26 @@
 							type: "button",
 							class: "pure-button button-error",
 							disabled: __props.scope.queryOnly || !stats.value.selected || reviewing.value,
-							onClick: _cache[11] || (_cache[11] = ($event) => runDelete(cands.value, "manual"))
+							onClick: _cache[12] || (_cache[12] = ($event) => runDelete(cands.value, "manual"))
 						}, " 🗑 删除已勾选 " + toDisplayString(stats.value.selected), 9, _hoisted_8$6)
 					]),
 					receipt.value ? (openBlock(), createElementBlock("div", _hoisted_9$6, [
-						_cache[24] || (_cache[24] = createBaseVNode("span", { class: "cex-text-success" }, "已生成回执", -1)),
+						_cache[25] || (_cache[25] = createBaseVNode("span", { class: "cex-text-success" }, "已生成回执", -1)),
 						createBaseVNode("button", {
 							type: "button",
 							class: "pure-button button-small",
-							onClick: _cache[12] || (_cache[12] = ($event) => emit("show-receipt", receipt.value.id))
+							onClick: _cache[13] || (_cache[13] = ($event) => emit("show-receipt", receipt.value.id))
 						}, "查看回执"),
 						createBaseVNode("button", {
 							type: "button",
 							class: "pure-button button-small button-secondary",
-							onClick: _cache[13] || (_cache[13] = ($event) => emit("suggest"))
+							onClick: _cache[14] || (_cache[14] = ($event) => emit("suggest"))
 						}, "🤖 根据本次删除推荐规则")
 					])) : createCommentVNode("", true),
 					paged.value.pages > 1 ? (openBlock(), createBlock(Pager_default, {
 						key: 1,
 						modelValue: page.value,
-						"onUpdate:modelValue": _cache[14] || (_cache[14] = ($event) => page.value = $event),
+						"onUpdate:modelValue": _cache[15] || (_cache[15] = ($event) => page.value = $event),
 						total: filtered.value.length,
 						"page-size": unref(pageSize)
 					}, null, 8, [
@@ -17102,7 +18060,7 @@
 						"total",
 						"page-size"
 					])) : createCommentVNode("", true),
-					createBaseVNode("table", _hoisted_10$6, [_cache[25] || (_cache[25] = createBaseVNode("thead", null, [createBaseVNode("tr", null, [
+					createBaseVNode("table", _hoisted_10$6, [_cache[26] || (_cache[26] = createBaseVNode("thead", null, [createBaseVNode("tr", null, [
 						createBaseVNode("th", { style: { "width": "28px" } }),
 						createBaseVNode("th", { style: { "width": "30px" } }, "类型"),
 						createBaseVNode("th", null, "名称 / 路径"),
@@ -17124,7 +18082,7 @@
 								"onUpdate:modelValue": ($event) => c.selected = $event,
 								type: "checkbox",
 								disabled: !unref(isSelectable)(c),
-								onChange: _cache[15] || (_cache[15] = ($event) => unref(cleaner).bump())
+								onChange: _cache[16] || (_cache[16] = ($event) => unref(cleaner).bump())
 							}, null, 40, _hoisted_11$5), [[vModelCheckbox, c.selected]])]),
 							createBaseVNode("td", null, toDisplayString(c.isDir ? "📁" : "📄"), 1),
 							createBaseVNode("td", null, [
@@ -17183,7 +18141,7 @@
 					paged.value.pages > 1 ? (openBlock(), createBlock(Pager_default, {
 						key: 2,
 						modelValue: page.value,
-						"onUpdate:modelValue": _cache[16] || (_cache[16] = ($event) => page.value = $event),
+						"onUpdate:modelValue": _cache[17] || (_cache[17] = ($event) => page.value = $event),
 						total: filtered.value.length,
 						"page-size": unref(pageSize)
 					}, null, 8, [
@@ -17195,9 +18153,9 @@
 			};
 		}
 	});
-	var _hoisted_1$14 = { class: "pure-control-group" };
-	var _hoisted_2$14 = { class: "pure-control-group" };
-	var _hoisted_3$9 = { class: "pure-control-group" };
+	var _hoisted_1$16 = { class: "pure-control-group" };
+	var _hoisted_2$16 = { class: "pure-control-group" };
+	var _hoisted_3$11 = { class: "pure-control-group" };
 	var _hoisted_4$9 = { class: "pure-control-group" };
 	var _hoisted_5$8 = ["max"];
 	var _hoisted_6$7 = { class: "pure-controls" };
@@ -17260,20 +18218,20 @@
 				}, [
 					createBaseVNode("fieldset", null, [
 						_cache[16] || (_cache[16] = createBaseVNode("legend", null, "连接（OpenAI 兼容接口）", -1)),
-						createBaseVNode("div", _hoisted_1$14, [_cache[11] || (_cache[11] = createBaseVNode("label", { for: "cex-ai-baseURL" }, "baseURL（含 /v1）", -1)), withDirectives(createBaseVNode("input", {
+						createBaseVNode("div", _hoisted_1$16, [_cache[11] || (_cache[11] = createBaseVNode("label", { for: "cex-ai-baseURL" }, "baseURL（含 /v1）", -1)), withDirectives(createBaseVNode("input", {
 							id: "cex-ai-baseURL",
 							"onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => cfg.baseURL = $event),
 							style: { "width": "360px" },
 							placeholder: "https://your-gateway/v1"
 						}, null, 512), [[vModelText, cfg.baseURL]])]),
-						createBaseVNode("div", _hoisted_2$14, [_cache[12] || (_cache[12] = createBaseVNode("label", { for: "cex-ai-key" }, "API Key", -1)), withDirectives(createBaseVNode("input", {
+						createBaseVNode("div", _hoisted_2$16, [_cache[12] || (_cache[12] = createBaseVNode("label", { for: "cex-ai-key" }, "API Key", -1)), withDirectives(createBaseVNode("input", {
 							id: "cex-ai-key",
 							"onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => cfg.apiKey = $event),
 							type: "password",
 							style: { "width": "360px" },
 							autocomplete: "off"
 						}, null, 512), [[vModelText, cfg.apiKey]])]),
-						createBaseVNode("div", _hoisted_3$9, [_cache[13] || (_cache[13] = createBaseVNode("label", { for: "cex-ai-model" }, "model", -1)), withDirectives(createBaseVNode("input", {
+						createBaseVNode("div", _hoisted_3$11, [_cache[13] || (_cache[13] = createBaseVNode("label", { for: "cex-ai-model" }, "model", -1)), withDirectives(createBaseVNode("input", {
 							id: "cex-ai-model",
 							"onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => cfg.model = $event),
 							style: { "width": "360px" }
@@ -17374,9 +18332,9 @@
 			};
 		}
 	});
-	var _hoisted_1$13 = { class: "pure-control-group" };
-	var _hoisted_2$13 = { class: "pure-control-group" };
-	var _hoisted_3$8 = { class: "pure-control-group" };
+	var _hoisted_1$15 = { class: "pure-control-group" };
+	var _hoisted_2$15 = { class: "pure-control-group" };
+	var _hoisted_3$10 = { class: "pure-control-group" };
 	var _hoisted_4$8 = { class: "pure-control-group" };
 	var _hoisted_5$7 = { class: "pure-control-group" };
 	var _hoisted_6$6 = { class: "pure-control-group" };
@@ -17406,12 +18364,12 @@
 				}, [
 					createBaseVNode("fieldset", null, [
 						_cache[10] || (_cache[10] = createBaseVNode("legend", null, "入口", -1)),
-						createBaseVNode("div", _hoisted_1$13, [_cache[8] || (_cache[8] = createBaseVNode("label", { for: "cex-showEntry" }, "在路径栏显示「清理文件」按钮", -1)), withDirectives(createBaseVNode("input", {
+						createBaseVNode("div", _hoisted_1$15, [_cache[8] || (_cache[8] = createBaseVNode("label", { for: "cex-showEntry" }, "在路径栏显示「清理文件」按钮", -1)), withDirectives(createBaseVNode("input", {
 							id: "cex-showEntry",
 							"onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => cfg.showEntryOnPathBar = $event),
 							type: "checkbox"
 						}, null, 512), [[vModelCheckbox, cfg.showEntryOnPathBar]])]),
-						createBaseVNode("div", _hoisted_2$13, [_cache[9] || (_cache[9] = createBaseVNode("label", { for: "cex-showEmptyEntry" }, "在路径栏显示「清理空目录」按钮", -1)), withDirectives(createBaseVNode("input", {
+						createBaseVNode("div", _hoisted_2$15, [_cache[9] || (_cache[9] = createBaseVNode("label", { for: "cex-showEmptyEntry" }, "在路径栏显示「清理空目录」按钮", -1)), withDirectives(createBaseVNode("input", {
 							id: "cex-showEmptyEntry",
 							"onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => empty.showEntryOnPathBar = $event),
 							type: "checkbox"
@@ -17419,7 +18377,7 @@
 					]),
 					createBaseVNode("fieldset", null, [
 						_cache[13] || (_cache[13] = createBaseVNode("legend", null, "按关键词清理", -1)),
-						createBaseVNode("div", _hoisted_3$8, [_cache[11] || (_cache[11] = createBaseVNode("label", null, "默认「关键词类别」", -1)), createVNode(ButtonGroup_default, {
+						createBaseVNode("div", _hoisted_3$10, [_cache[11] || (_cache[11] = createBaseVNode("label", null, "默认「关键词类别」", -1)), createVNode(ButtonGroup_default, {
 							"model-value": cfg.keywordDefaultCategory,
 							mapping: unref(KEYWORD_CATEGORY_LABEL),
 							"onUpdate:modelValue": _cache[2] || (_cache[2] = (v) => cfg.keywordDefaultCategory = v)
@@ -17553,8 +18511,64 @@
 		out[KEYS.uiPrefs] = loadUiPrefs();
 		return JSON.stringify(out, null, 2);
 	}
-	var _hoisted_1$12 = { style: { "margin-top": "10px" } };
-	var _hoisted_2$12 = {
+	var _hoisted_1$14 = { class: "cex-small" };
+	var _hoisted_2$14 = ["disabled"];
+	var _hoisted_3$9 = {
+		key: 0,
+		class: "cex-small cex-text-danger"
+	};
+	var SyncSettings_default = defineComponent({
+		__name: "SyncSettings",
+		setup(__props) {
+			const svc = useServices();
+			const state = svc.sync.state;
+			const enabled = ref(isSyncEnabled());
+			const STATUS = {
+				off: "未开启",
+				idle: "等待同步",
+				syncing: "同步中…",
+				ok: "已同步",
+				error: "同步失败"
+			};
+			const last = computed(() => state.lastSync ? new Date(state.lastSync).toLocaleString() : "从未");
+			function toggle() {
+				svc.sync.setEnabled(enabled.value);
+			}
+			return (_ctx, _cache) => {
+				return openBlock(), createElementBlock("fieldset", null, [
+					_cache[5] || (_cache[5] = createBaseVNode("legend", null, "☁ 云同步", -1)),
+					createBaseVNode("p", _hoisted_1$14, [
+						_cache[2] || (_cache[2] = createTextVNode(" 分组、清理设置、空目录设置、AI 配置（含 API Key）、界面偏好、通知设置和 AI 复核缓存保存到网盘 ", -1)),
+						createBaseVNode("code", null, toDisplayString(unref(SYNC_DIR_TEXT)), 1),
+						createTextVNode("（" + toDisplayString(unref(CONFIG_FILE)) + "、" + toDisplayString(unref(CACHE_FILE)) + "），换电脑后自动同步。删除回执、路径缓存、最近目录不同步。 ", 1)
+					]),
+					_cache[6] || (_cache[6] = createBaseVNode("p", { class: "cex-small cex-text-info" }, " 每台电脑各自打开一次。新电脑第一次同步时以云端为准。每次上传会把旧文件放进回收站。 ", -1)),
+					createBaseVNode("label", null, [withDirectives(createBaseVNode("input", {
+						"onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => enabled.value = $event),
+						type: "checkbox",
+						onChange: toggle
+					}, null, 544), [[vModelCheckbox, enabled.value]]), _cache[3] || (_cache[3] = createTextVNode(" 开启云同步", -1))]),
+					createBaseVNode("p", null, [
+						_cache[4] || (_cache[4] = createTextVNode(" 状态：", -1)),
+						createBaseVNode("span", { class: normalizeClass({
+							"cex-text-danger": unref(state).status === "error",
+							"cex-text-success": unref(state).status === "ok"
+						}) }, toDisplayString(STATUS[unref(state).status]), 3),
+						createTextVNode(" · 上次同步：" + toDisplayString(last.value) + " ", 1),
+						createBaseVNode("button", {
+							type: "button",
+							class: "pure-button button-xsmall",
+							disabled: !enabled.value || unref(state).status === "syncing",
+							onClick: _cache[1] || (_cache[1] = ($event) => unref(svc).sync.sync())
+						}, "立即同步", 8, _hoisted_2$14)
+					]),
+					unref(state).status === "error" ? (openBlock(), createElementBlock("p", _hoisted_3$9, toDisplayString(unref(state).error), 1)) : createCommentVNode("", true)
+				]);
+			};
+		}
+	});
+	var _hoisted_1$13 = { style: { "margin-top": "10px" } };
+	var _hoisted_2$13 = {
 		key: 0,
 		class: "cex-text-danger"
 	};
@@ -17588,7 +18602,7 @@
 				downloadText(buildExport({ includeApiKey: includeKey.value }), `115-cleaner-config-${Date.now()}.json`, "application/json");
 			}
 			async function clearCache() {
-				if (!await confirmBox("清空全部 AI 结论缓存（包括你的手动改判）？")) return;
+				if (!await confirmBox("清空全部 AI 结论缓存（包括你的手动改判）？开启云同步时云端那份也会一起清空。")) return;
 				await svc.stores.aiCache.clear();
 				await refresh();
 			}
@@ -17605,45 +18619,114 @@
 				return openBlock(), createElementBlock("form", {
 					class: "pure-form cex-form",
 					onSubmit: _cache[1] || (_cache[1] = withModifiers(() => {}, ["prevent"]))
-				}, [createBaseVNode("fieldset", null, [
-					_cache[3] || (_cache[3] = createBaseVNode("legend", null, "导入 / 导出", -1)),
-					_cache[4] || (_cache[4] = createBaseVNode("p", { class: "cex-small" }, "可导入「115不大助手」导出的配置文件（只取清理相关的 4 项），也可导入本脚本导出的文件。", -1)),
-					createBaseVNode("input", {
-						type: "file",
-						accept: ".json,application/json",
-						onChange: onFile
-					}, null, 32),
-					createBaseVNode("div", _hoisted_1$12, [createBaseVNode("label", null, [withDirectives(createBaseVNode("input", {
-						"onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => includeKey.value = $event),
-						type: "checkbox"
-					}, null, 512), [[vModelCheckbox, includeKey.value]]), _cache[2] || (_cache[2] = createTextVNode(" 导出时包含 API Key", -1))]), createBaseVNode("button", {
-						type: "button",
-						class: "pure-button button-small",
-						style: { "margin-left": "8px" },
-						onClick: doExport
-					}, "导出本脚本配置")]),
-					_cache[5] || (_cache[5] = createBaseVNode("p", { class: "cex-small cex-text-danger" }, "使用了后缀排除写法（!）的分组不要再导回原脚本使用。", -1))
-				]), createBaseVNode("fieldset", null, [
-					_cache[6] || (_cache[6] = createBaseVNode("legend", null, "缓存与回执", -1)),
-					!unref(svc).stores.persistent ? (openBlock(), createElementBlock("p", _hoisted_2$12, "IndexedDB 不可用，缓存和回执不会被保存。")) : createCommentVNode("", true),
-					createBaseVNode("p", null, [createTextVNode("AI 结论缓存 " + toDisplayString(cacheCount.value) + " 条 ", 1), createBaseVNode("button", {
-						type: "button",
-						class: "pure-button button-xsmall",
-						onClick: clearCache
-					}, "清空")]),
-					createBaseVNode("p", null, [
-						createTextVNode(" 回执 " + toDisplayString(receiptCount.value) + " 份 ", 1),
-						createBaseVNode("button", {
+				}, [
+					createVNode(SyncSettings_default),
+					createBaseVNode("fieldset", null, [
+						_cache[3] || (_cache[3] = createBaseVNode("legend", null, "导入 / 导出", -1)),
+						_cache[4] || (_cache[4] = createBaseVNode("p", { class: "cex-small" }, "可导入「115不大助手」导出的配置文件（只取清理相关的 4 项），也可导入本脚本导出的文件。", -1)),
+						createBaseVNode("input", {
+							type: "file",
+							accept: ".json,application/json",
+							onChange: onFile
+						}, null, 32),
+						createBaseVNode("div", _hoisted_1$13, [createBaseVNode("label", null, [withDirectives(createBaseVNode("input", {
+							"onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => includeKey.value = $event),
+							type: "checkbox"
+						}, null, 512), [[vModelCheckbox, includeKey.value]]), _cache[2] || (_cache[2] = createTextVNode(" 导出时包含 API Key", -1))]), createBaseVNode("button", {
+							type: "button",
+							class: "pure-button button-small",
+							style: { "margin-left": "8px" },
+							onClick: doExport
+						}, "导出本脚本配置")]),
+						_cache[5] || (_cache[5] = createBaseVNode("p", { class: "cex-small cex-text-danger" }, "使用了后缀排除写法（!）的分组不要再导回原脚本使用。", -1))
+					]),
+					createBaseVNode("fieldset", null, [
+						_cache[6] || (_cache[6] = createBaseVNode("legend", null, "缓存与回执", -1)),
+						!unref(svc).stores.persistent ? (openBlock(), createElementBlock("p", _hoisted_2$13, "IndexedDB 不可用，缓存和回执不会被保存。")) : createCommentVNode("", true),
+						createBaseVNode("p", null, [createTextVNode("AI 结论缓存 " + toDisplayString(cacheCount.value) + " 条 ", 1), createBaseVNode("button", {
 							type: "button",
 							class: "pure-button button-xsmall",
-							onClick: prune
-						}, "清理过期（90 天 / 200 份）"),
-						createBaseVNode("button", {
-							type: "button",
-							class: "pure-button button-xsmall button-error",
-							onClick: clearReceipts
-						}, "全部删除")
+							onClick: clearCache
+						}, "清空")]),
+						createBaseVNode("p", null, [
+							createTextVNode(" 回执 " + toDisplayString(receiptCount.value) + " 份 ", 1),
+							createBaseVNode("button", {
+								type: "button",
+								class: "pure-button button-xsmall",
+								onClick: prune
+							}, "清理过期（90 天 / 200 份）"),
+							createBaseVNode("button", {
+								type: "button",
+								class: "pure-button button-xsmall button-error",
+								onClick: clearReceipts
+							}, "全部删除")
+						])
 					])
+				], 32);
+			};
+		}
+	});
+	var _hoisted_1$12 = { class: "pure-control-group" };
+	var _hoisted_2$12 = { class: "pure-controls" };
+	var _hoisted_3$8 = ["disabled"];
+	var NotifySettings_default = defineComponent({
+		__name: "NotifySettings",
+		setup(__props) {
+			const cfg = reactive(loadNotifyConfig());
+			const testing = ref(false);
+			watch(cfg, debounce(() => {
+				saveNotifyConfig({
+					...cfg,
+					sendKey: cfg.sendKey.trim()
+				});
+				toast("通知设置已保存");
+			}, 500), { deep: true });
+			async function test() {
+				testing.value = true;
+				try {
+					await sendServerChan(cfg.sendKey, "115清理：测试通知", ["状态: Server酱配置正确", `时间: ${new Date().toLocaleString()}`]);
+					toast("已发送，请查看手机");
+				} catch (e) {
+					await alertError("发送失败", e);
+				} finally {
+					testing.value = false;
+				}
+			}
+			return (_ctx, _cache) => {
+				return openBlock(), createElementBlock("form", {
+					class: "pure-form pure-form-aligned cex-form",
+					onSubmit: _cache[4] || (_cache[4] = withModifiers(() => {}, ["prevent"]))
+				}, [createBaseVNode("fieldset", null, [
+					_cache[7] || (_cache[7] = createBaseVNode("legend", null, "Server酱", -1)),
+					createBaseVNode("div", _hoisted_1$12, [_cache[5] || (_cache[5] = createBaseVNode("label", { for: "cex-sc-key" }, "SendKey", -1)), withDirectives(createBaseVNode("input", {
+						id: "cex-sc-key",
+						"onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => cfg.sendKey = $event),
+						type: "password",
+						style: { "width": "360px" },
+						autocomplete: "off",
+						placeholder: "sctp…"
+					}, null, 512), [[vModelText, cfg.sendKey]])]),
+					createBaseVNode("div", _hoisted_2$12, [createBaseVNode("button", {
+						type: "button",
+						class: "pure-button",
+						disabled: testing.value || !cfg.sendKey.trim(),
+						onClick: test
+					}, "发送测试通知", 8, _hoisted_3$8), _cache[6] || (_cache[6] = createBaseVNode("span", { class: "cex-small cex-text-info" }, " SendKey 只保存在油猴存储和你网盘里的云同步文件中。", -1))])
+				]), createBaseVNode("fieldset", null, [
+					_cache[11] || (_cache[11] = createBaseVNode("legend", null, "哪些入口跑完后通知", -1)),
+					_cache[12] || (_cache[12] = createBaseVNode("p", { class: "cex-small cex-text-info" }, "也可以直接在各按钮旁勾选「📱通知」，两边是同一个开关。", -1)),
+					createBaseVNode("label", null, [withDirectives(createBaseVNode("input", {
+						"onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => cfg.ai = $event),
+						type: "checkbox"
+					}, null, 512), [[vModelCheckbox, cfg.ai]]), _cache[8] || (_cache[8] = createTextVNode(" AI判断全部 / 后缀+关键词一起AI判断 / 审核台 AI复核（勾选后不再弹出“开始 AI 复核？”确认框）", -1))]),
+					createBaseVNode("label", null, [withDirectives(createBaseVNode("input", {
+						"onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => cfg.query = $event),
+						type: "checkbox"
+					}, null, 512), [[vModelCheckbox, cfg.query]]), _cache[9] || (_cache[9] = createTextVNode(" 只查询 / 一键清理", -1))]),
+					createBaseVNode("label", null, [withDirectives(createBaseVNode("input", {
+						"onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => cfg.empty = $event),
+						type: "checkbox"
+					}, null, 512), [[vModelCheckbox, cfg.empty]]), _cache[10] || (_cache[10] = createTextVNode(" 空目录检测", -1))])
 				])], 32);
 			};
 		}
@@ -17659,7 +18742,8 @@
 			const TABS = {
 				cleaner: "清理",
 				ai: "AI",
-				data: "数据"
+				notify: "通知",
+				data: "数据 / 云同步"
 			};
 			return (_ctx, _cache) => {
 				return openBlock(), createElementBlock("div", _hoisted_1$11, [createBaseVNode("div", _hoisted_2$11, [
@@ -17675,7 +18759,7 @@
 						style: { "margin-left": "auto" },
 						onClick: _cache[1] || (_cache[1] = ($event) => emit("close"))
 					}, "关闭")
-				]), tab.value === "cleaner" ? (openBlock(), createBlock(CleanerSettings_default, { key: 0 })) : tab.value === "ai" ? (openBlock(), createBlock(AiSettings_default, { key: 1 })) : (openBlock(), createBlock(DataSettings_default, { key: 2 }))]);
+				]), tab.value === "cleaner" ? (openBlock(), createBlock(CleanerSettings_default, { key: 0 })) : tab.value === "ai" ? (openBlock(), createBlock(AiSettings_default, { key: 1 })) : tab.value === "notify" ? (openBlock(), createBlock(NotifySettings_default, { key: 2 })) : (openBlock(), createBlock(DataSettings_default, { key: 3 }))]);
 			};
 		}
 	});
@@ -18489,7 +19573,11 @@
 				const g = groups.value.find((x) => x.id === (current.value?.id ?? lastId)) ?? groups.value[0];
 				if (g) select(g);
 			}
-			onMounted(reload);
+			onMounted(() => {
+				reload();
+				window.addEventListener(SYNCED_EVENT, reload);
+			});
+			onBeforeUnmount(() => window.removeEventListener(SYNCED_EVENT, reload));
 			function edit(g) {
 				listShown.value = false;
 				editing.value = g ? { ...g } : newGroup(props.type);
@@ -18730,14 +19818,15 @@
 					alertError("分组内容有误", e);
 				}
 			}
-			function open(row, intent) {
+			function open(row, intent, notify = false) {
 				const refs = row ? [row.ref] : c.visibleRows("keyword").map((r) => r.ref);
 				c.openReview({
 					title: row ? `关键词：${row.ref.ruleValue}` : `按关键词清理 · ${group.value?.label ?? ""}`,
 					kinds: ["keyword"],
 					refs,
 					intent,
-					queryOnly: queryOnly.value
+					queryOnly: queryOnly.value,
+					notify
 				});
 			}
 			async function onAi(row) {
@@ -18745,13 +19834,18 @@
 				open(row, "ai");
 			}
 			async function queryOnlyAll() {
+				const notify = wantNotify("query");
 				await c.queryAll("keyword");
+				if (notify) c.notifyQuery("keyword", "none");
 				toast("按关键词查询完成");
 			}
 			async function oneClick() {
+				const notify = wantNotify("query");
 				await c.queryAll("keyword");
 				const cfg = loadAiConfig();
-				open(null, isAiConfigured(cfg) && cfg.mode === "auto" ? "ai" : "clean");
+				const ai = isAiConfigured(cfg) && cfg.mode === "auto";
+				if (notify && !ai) c.notifyQuery("keyword", "confirm");
+				open(null, ai ? "ai" : "clean", ai && notify);
 			}
 			__expose({ reloadGroups: () => manager.value?.reload() });
 			return (_ctx, _cache) => {
@@ -18773,6 +19867,7 @@
 						disabled: !unref(c).session.value || queryOnly.value,
 						onClick: oneClick
 					}, "一键清理", 8, _hoisted_4$3),
+					createVNode(NotifyToggle_default, { kind: "query" }),
 					createBaseVNode("button", {
 						type: "button",
 						class: "pure-button button-secondary",
@@ -18780,6 +19875,7 @@
 						title: aiReady.value ? "查询本面板全部规则后，一次性交给 AI 复核" : "请先在设置中配置 AI",
 						onClick: _cache[0] || (_cache[0] = ($event) => unref(c).aiAll(["keyword"]))
 					}, " 🤖 AI判断全部 ", 8, _hoisted_5$2),
+					createVNode(NotifyToggle_default, { kind: "ai" }),
 					_cache[6] || (_cache[6] = createBaseVNode("span", { class: "cex-label" }, "不大于", -1)),
 					withDirectives(createBaseVNode("input", {
 						"onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => isRef(maxMB) ? maxMB.value = $event : null),
@@ -18910,14 +20006,15 @@
 				send(wangpanFrame(), MSG.invokeFilter, r.isFilter ? { type: Number(r.pattern) } : { suffix: r.value });
 				toast(`已调用115筛选: ${r.value}`, "info", 2500);
 			}
-			function open(row, intent) {
+			function open(row, intent, notify = false) {
 				const refs = row ? [row.ref] : c.visibleRows("suffix").map((r) => r.ref);
 				c.openReview({
 					title: row ? `后缀：${row.ref.ruleValue}` : `按后缀名清理 · ${group.value?.label ?? ""}`,
 					kinds: ["suffix"],
 					refs,
 					intent,
-					queryOnly: queryOnly.value
+					queryOnly: queryOnly.value,
+					notify
 				});
 			}
 			async function onAi(row) {
@@ -18925,13 +20022,18 @@
 				open(row, "ai");
 			}
 			async function queryOnlyAll() {
+				const notify = wantNotify("query");
 				await c.queryAll("suffix");
+				if (notify) c.notifyQuery("suffix", "none");
 				toast("按后缀名查询完成");
 			}
 			async function oneClick() {
+				const notify = wantNotify("query");
 				await c.queryAll("suffix");
 				const cfg = loadAiConfig();
-				open(null, isAiConfigured(cfg) && cfg.mode === "auto" ? "ai" : "clean");
+				const ai = isAiConfigured(cfg) && cfg.mode === "auto";
+				if (notify && !ai) c.notifyQuery("suffix", "confirm");
+				open(null, ai ? "ai" : "clean", ai && notify);
 			}
 			return (_ctx, _cache) => {
 				return openBlock(), createElementBlock("div", _hoisted_1$3, [createBaseVNode("div", _hoisted_2$3, [
@@ -18952,6 +20054,7 @@
 						disabled: !unref(c).session.value || queryOnly.value,
 						onClick: oneClick
 					}, "一键清理", 8, _hoisted_4$2),
+					createVNode(NotifyToggle_default, { kind: "query" }),
 					createBaseVNode("button", {
 						type: "button",
 						class: "pure-button button-secondary",
@@ -18959,6 +20062,7 @@
 						title: aiReady.value ? "查询本面板全部规则后，一次性交给 AI 复核" : "请先在设置中配置 AI",
 						onClick: _cache[0] || (_cache[0] = ($event) => unref(c).aiAll(["suffix"]))
 					}, " 🤖 AI判断全部 ", 8, _hoisted_5$1),
+					createVNode(NotifyToggle_default, { kind: "ai" }),
 					_cache[3] || (_cache[3] = createBaseVNode("span", { class: "cex-label" }, "不大于", -1)),
 					withDirectives(createBaseVNode("input", {
 						"onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => isRef(maxMB) ? maxMB.value = $event : null),
@@ -19089,7 +20193,12 @@
 				keywordPanel.value?.reloadGroups();
 			}
 			let off = null;
+			const onSynced = () => {
+				refreshNotifyUi();
+				cleaner.bump();
+			};
 			onMounted(() => {
+				window.addEventListener(SYNCED_EVENT, onSynced);
 				off = listen((msg, source) => {
 					if (msg.type === MSG.openCleaner) {
 						openAt(currentCid());
@@ -19097,7 +20206,10 @@
 					} else if (msg.type === MSG.openSettings) settingsOpen.value = true;
 				});
 			});
-			onBeforeUnmount(() => off?.());
+			onBeforeUnmount(() => {
+				off?.();
+				window.removeEventListener(SYNCED_EVENT, onSynced);
+			});
 			return (_ctx, _cache) => {
 				return openBlock(), createElementBlock(Fragment, null, [
 					createVNode(Drawer_default, {
@@ -19135,6 +20247,7 @@
 									title: aiReady.value ? "查询后缀和关键词两个面板的全部规则，合并去重后一次性交给 AI 复核" : "请先在设置中配置 AI",
 									onClick: _cache[2] || (_cache[2] = ($event) => unref(cleaner).aiAll(["suffix", "keyword"]))
 								}, " 🤖 后缀+关键词一起AI判断 ", 8, _hoisted_2$2),
+								createVNode(NotifyToggle_default, { kind: "ai" }),
 								createBaseVNode("span", { class: normalizeClass(["cex-small", aiStatus.value.startsWith("●") ? "cex-text-success" : "cex-text-info"]) }, toDisplayString(aiStatus.value), 3)
 							]),
 							createVNode(PathBar_default, {
@@ -19602,6 +20715,12 @@
 				}
 			}
 			async function detect() {
+				const notify = wantNotify("empty");
+				const push = (err) => {
+					if (!notify) return;
+					const m = emptyDirMessage(pathText(path.value), items.value.length, err);
+					return notifyUser(m.title, m.lines);
+				};
 				running.value = true;
 				logs.value = [];
 				items.value = [];
@@ -19612,11 +20731,13 @@
 				}, (it) => items.value.push(reactive(it)));
 				try {
 					await detector.run(cid.value, keepTree.value);
+					await push();
 					await swal.fire({
 						title: "空文件夹检测已完成",
 						text: `找到 ${items.value.length} 个`
 					});
 				} catch (e) {
+					await push(e);
 					await alertError("空文件夹检测失败", e);
 				} finally {
 					running.value = false;
@@ -19764,6 +20885,7 @@
 								disabled: !cid.value || running.value,
 								onClick: detect
 							}, "检测空文件夹", 8, _hoisted_3),
+							createVNode(NotifyToggle_default, { kind: "empty" }),
 							createBaseVNode("label", null, [withDirectives(createBaseVNode("input", {
 								"onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => keepTree.value = $event),
 								type: "checkbox"
@@ -19913,6 +21035,7 @@
 	}
 	async function bootTop() {
 		const services = await createServices();
+		services.sync.start();
 		mount("cex-cleaner-root", CleanerApp_default, services);
 		mount("cex-empty-root", EmptyCleanerApp_default, services);
 		gmMenu("清理文件", () => send(window, MSG.openCleaner));
